@@ -78,9 +78,5 @@ zstyle ':completion:*' rehash true
 zstyle ':completion:*' menu select list-colors ${(s.:.)LS_COLORS}
 
 ### completion and prompt init
-autoload -Uz compinit promptinit colors vcs_info
+autoload -Uz compinit colors vcs_info
 compinit
-promptinit
-
-### This will set the default prompt to the walters theme
-prompt walters
