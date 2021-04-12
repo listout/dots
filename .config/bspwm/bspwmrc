@@ -15,6 +15,9 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc config normal_border_color '#224f60'
+bspc config focused_border_color '#6f89a9'
+
 wmname LG3D
 
 bspc rule -a URxvt state=floating
