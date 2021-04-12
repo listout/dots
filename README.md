@@ -8,3 +8,5 @@ Configs added:
 - [x] sxhkd
 - [x] wallpaper
 - [x] zsh
+- [x] fnm installed and added to path
+- [x] ranger
