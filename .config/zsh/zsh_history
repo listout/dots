@@ -1,0 +1,12 @@
+ls
+ls
+history
+cd .config/zsh
+ls
+rm -fr zsh_history
+ls
+cd .config/zsh
+ls
+source ~/.zshrc
+vim history_search.zsh
+sudo poweroff
