@@ -1,0 +1,98 @@
+[bar/mybar]
+
+bottom=false
+fixed-center=true
+height=18
+width=100%
+padding=1
+
+border-size=1
+border-color = #000000
+
+background = #000000
+foreground = #ffffff
+
+font-0="TamzenForPowerline:pixelsize=14"
+font-1="Symbols Nerd Font:size=12;2"
+
+modules-right=memory cpu temperature pulseaudio date
+modules-left=battery
+modules-center=bspwm
+module-margin=2
+
+tray-position=right
+tray-maxsize=16
+
+
+[module/battery]
+type=internal/battery
+
+battery=BAT0
+adapter=ADP0
+
+poll-interval=5
+full-at=98
+
+time-format=%H:%M
+
+label-discharging= %percentage%%
+label-charging= %percentage%%
+label-full= %percentage%%
+
+format-discharging=<label-discharging>
+format-charging=<label-charging>
+format-full=<label-full>
+
+[module/date]
+type=internal/date
+interval=1.0
+date=%d-%m-%Y%
+time=%I:%M
+date-alt=%A, %d %B %Y
+time-alt=%I:%M:%S %A, %d %B %Y
+
+format= <label>
+label=%time%
+
+[module/temperature]
+type=internal/temperature
+interval=0.5
+thermal-zone=0
+base-temperature=38
+warn-temperature=70
+format=<label>
+format-warn=<label-warn>
+label= %temperature-c%
+label-warn= %temperature-c%
+
+[module/cpu]
+type=internal/cpu
+interval=0.5
+format=<label>
+label= %percentage%%
+
+[module/memory]
+type=internal/memory
+interval=3
+format=<label>
+label= %gb_used%
+
+[module/pulseaudio]
+type=internal/pulseaudio
+sink=alsa_output.pci-0000_00_1b.0.analog-stereo
+format=<label-volume>
+label-volume=墳 %percentage%%
+label-muted=
+click-right=pavucontrol
+
+[module/bspwm]
+type=internal/bspwm
+format=<label-state> <label-mode>
+label-focused=
+label-focused-padding=1
+label-occupied=
+label-occupied-padding=1
+label-empty=
+label-empty-padding=1
+
+; vim: set ft=dosini nomodeline:
