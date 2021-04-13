@@ -1,0 +1,38 @@
+# vim: set ft=muttrc:
+source "gpg -dq $HOME/Nextcloud/keepass_database/mutt_pass.gpg |"
+
+## Receive options
+set imap_pass=$my_pass
+set imap_user=$my_userName@gmail.com
+set folder=imaps://$my_userName@imap.gmail.com/
+set spoolfile=+INBOX
+mailboxes imaps://imap.gmail.com/INBOX
+
+# store message header locally
+set header_cache=~/.cache/neomutt
+
+# store messages locally to speed things up
+set message_cachedir="~/.cache/neomutt"
+
+# specify where to save and/or look for postponded messages
+set postponed=+[Gmail]/Drafts
+
+# allow mutt to open a new IMAP connection autmatically
+unset imap_passive
+
+# keep imap connection alive by polling intermittently
+set imap_keepalive=300
+
+# how often to check check for new email
+set mail_check=120
+
+# gmail automatically saves sent emails, so we avoid duplicates
+unset record
+
+## Send options
+set smtp_url=smtps://$my_userName:$my_pass@smtp.gmail.com
+set from=$my_userName@gmail.com
+set hostname="gmail.com"
+
+## Hook
+account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"
