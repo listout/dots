@@ -11,6 +11,7 @@ Configs added:
 - [x] fnm installed and added to path
 - [x] ranger
 - [x] neomutt
+- [x] kitty
 
 Install fnm
 
