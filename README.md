@@ -12,6 +12,7 @@ Configs added:
 - [x] ranger
 - [x] neomutt
 - [x] kitty
+- [x] vim
 
 Install fnm
 
