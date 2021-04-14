@@ -12,7 +12,7 @@ Configs added:
 - [x] ranger
 - [x] neomutt
 - [x] kitty
-- [x] vim
+- [x] vim ( other configs are done, only the filetype after left )
 
 Install fnm
 
