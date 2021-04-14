@@ -17,7 +17,6 @@ Super is modkey
 
 ## Application
 
-|                      |                  |
 | -------------------- | ---------------- |
 | Font                 | Tamzen           |
 | Text Editor          | (Neo)Vim         |
