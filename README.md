@@ -17,13 +17,15 @@ Super is modkey
 
 ## Application
 
-| Font                 | Tamzen          |
-| Text Editor          | (Neo)Vim        |
-| Terminal             | Kitty           |
-| Bar                  | Polybar         |
-| Compositor           | Picom           |
-| Application Launcher | Rofi            |
-| Filemanager          | Ranger + Thunar |
-| Web browser          | firefox         |
-| Pdf Reader           | Zathura         |
-| Email Client         | Neomutt         |
+|                      |                  |
+| -------------------- | ---------------- |
+| Font                 | Tamzen           |
+| Text Editor          | (Neo)Vim         |
+| Terminal             | Kitty            |
+| Bar                  | Polybar          |
+| Compositor           | Picom            |
+| Application Launcher | Rofi             |
+| Filemanager          | Ranger + Thunar  |
+| Web browser          | firefox          |
+| Pdf Reader           | Zathura          |
+| Email Client         | Neomutt          |
