@@ -1,0 +1,10 @@
+[core]
+	pager = nvim -u NORC -R -
+[color]
+	ui = false
+[difftool]
+	prompt = false
+[diff]
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE
