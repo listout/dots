@@ -10,7 +10,7 @@ border-size=1
 border-color = #00000000
 
 background = #00000000
-foreground = #000000
+foreground = #b5b4c9
 
 font-0="TamzenForPowerline:pixelsize=14;2"
 font-1="Symbols Nerd Font:size=11;2"
