@@ -1,181 +1,74 @@
 configuration {
-	modi: "drun,windowcd,window";
-	width: 30;
-	lines: 5;
-	show-icons: true;
-	terminal: "urxvt";
-	disable-history: true;
-	sidebar-mode: true;
-	tokenize: true;
-	font: "TeX Gyre Heros 11";
-	display-drun: "Apps ::";
-	display-windowcd: "Window ::";
-	display-window: "Windows ::";
+	modi:                "drun,windowcd,window";
+	width:               30;
+	lines:               5;
+	show-icons:          true;
+	font:                "Mono 11";
+	terminal:            "urxvt";
+	disable-history:     true;
+	sidebar-mode:        false;
+	tokenize:            true;
+	m:                   "-5";
+	line-margin:         2;
+	line-padding:        1;
+	separator-style:     "none";
+	hide-scrollbar:      true;
+	window-format:       "{w} {c}";
+	/*fullscreen: true;*/
+	columns:             1;
+	display-drun:        "𝛌:";
+	display-windowcd:    "𝛅:";
+	display-window:      "γ:";
+
+	/* vim key bindings */
+	kb-row-up:           "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
+	kb-row-down:         "Down,Control+j";
+	kb-accept-entry:     "Control+m,Return,KP_Enter";
+	kb-remove-to-eol:    "Control+Shift+e";
+	kb-mode-next:        "Shift+Right,Control+Tab,Control+l";
+	kb-mode-previous:    "Shift+Left,Control+Shift+Tab,Control+h";
+	kb-remove-char-back: "BackSpace";
 }
 
 * {
-	active-background: #687887;
-	active-foreground: @foreground;
-	normal-background: @background;
-	normal-foreground: @foreground;
-	urgent-background: #57646F;
-	urgent-foreground: @foreground;
+	bg: #1c1c1c;
+	fg: #b5b4c9;
+	accent: #fdfbee;
 
-	alternate-active-background: @background;
-	alternate-active-foreground: @foreground;
-	alternate-normal-background: @background;
-	alternate-normal-foreground: @foreground;
-	alternate-urgent-background: @background;
-	alternate-urgent-foreground: @foreground;
-
-	selected-active-background: #57646F;
-	selected-active-foreground: @foreground;
-	selected-normal-background: #687887;
-	selected-normal-foreground: @foreground;
-	selected-urgent-background: #778797;
-	selected-urgent-foreground: @foreground;
-
-	background-color: @background;
-	background: #0b0906;
-	foreground: #c3cbd3;
-	border-color: @background;
-	spacing: 2;
+	background-color: @bg;
+	text-color: @fg;
 }
 
-#window {
-	background-color: @background;
-	border: 0;
-	padding: 2.5ch;
+window {
+	/*padding: 100px 300px 100px 300px; // top, right, bottom, left*/
+	padding:50px;
+	border-radius: 0px;
+	border: 3;
+	border-color: @fg;
 }
 
-#mainbox {
-	border: 0;
-	padding: 0;
+prompt, entry {
+	text-color: @fg;
+	padding: 3px;
 }
 
-#message {
-	border: 2px 0px 0px;
-	border-color: @border-color;
-	padding: 1px;
+element {
+	border-radius: 0px;
+	padding: 3px;
 }
 
-#textbox {
-	text-color: @foreground;
+element selected {
+	background-color: @fg;
+	text-color: @bg;
 }
 
-#inputbar {
-	children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+button selected {
+	background-color: @fg;
+	text-color: @bg;
+	border-radius: 0px;
+	padding: 0px;
 }
 
-#textbox-prompt-colon {
-	expand: false;
-	str: ":";
-	margin: 0px 0.3em 0em 0em;
-	text-color: @normal-foreground;
-}
+element-icon { size: 2.3ch ; }
 
-#listview {
-	fixed-height: 0;
-	border: 2px 0px 0px;
-	border-color: @border-color;
-	spacing: 2px;
-	scrollbar: true;
-	padding: 2px 0px 0px;
-}
-
-#element {
-	border: 0;
-	padding: 1px;
-}
-
-#element.normal.normal {
-	background-color: @normal-background;
-	text-color: @normal-foreground;
-}
-
-#element.normal.urgent {
-	background-color: @urgent-background;
-	text-color: @urgent-foreground;
-}
-
-#element.normal.active {
-	background-color: @active-background;
-	text-color: @active-foreground;
-}
-
-#element.selected.normal {
-	background-color: @selected-normal-background;
-	text-color: @selected-normal-foreground;
-}
-
-#element.selected.urgent {
-	background-color: @selected-urgent-background;
-	text-color: @selected-urgent-foreground;
-}
-
-#element.selected.active {
-	background-color: @selected-active-background;
-	text-color: @selected-active-foreground;
-}
-
-#element.alternate.normal {
-	background-color: @alternate-normal-background;
-	text-color: @alternate-normal-foreground;
-}
-
-#element.alternate.urgent {
-	background-color: @alternate-urgent-background;
-	text-color: @alternate-urgent-foreground;
-}
-
-#element.alternate.active {
-	background-color: @alternate-active-background;
-	text-color: @alternate-active-foreground;
-}
-
-#scrollbar {
-	width: 4px;
-	border: 0;
-	handle-width: 8px;
-	padding: 0;
-}
-
-#sidebar {
-	border: 2px 0px 0px;
-	border-color: @border-color;
-}
-
-#button {
-	text-color: @normal-foreground;
-}
-
-#button.selected {
-	background-color: @selected-normal-background;
-	text-color: @selected-normal-foreground;
-}
-
-#inputbar {
-	spacing: 0;
-	text-color: @normal-foreground;
-	padding: 1px;
-}
-
-#case-indicator {
-	spacing: 0;
-	text-color: @normal-foreground;
-}
-
-#entry {
-	spacing: 0;
-	text-color: @normal-foreground;
-}
-
-#prompt {
-	spacing: 0;
-	text-color: @normal-foreground;
-}
-
-element-icon {
-	size: 2.3ch;
-}
-// vim: set ft=css:
+// vim: set ft=css :
