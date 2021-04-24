@@ -17,16 +17,16 @@ Super is modkey
 
 ## Application
 
-| Apps                 | I use                                         |
-| -------------------- | ----------------                              |
-| Font                 | Tamzen                                        |
-| Text Editor          | (Neo)Vim                                      |
-| Terminal             | Kitty                                         |
-| Bar                  | Polybar                                       |
-| Compositor           | Picom                                         |
-| Application Launcher | Rofi                                          |
-| Filemanager          | Ranger + Thunar                               |
-| Web browser          | firefox                                       |
-| Pdf Reader           | Zathura                                       |
-| Email Client         | Neomutt                                       |
-| Wallpaper            | [wallhaven.cc](https://wallhaven.cc/w/2e2rpy) |
+| Apps                 | I use            |
+| -------------------- | ---------------- |
+| Font                 | Tamzen           |
+| Text Editor          | (Neo)Vim         |
+| Terminal             | Kitty + urxvt    |
+| Bar                  | Polybar          |
+| Compositor           | Picom            |
+| Application Launcher | Rofi             |
+| Filemanager          | Ranger + Thunar  |
+| Web browser          | firefox          |
+| Pdf Reader           | Zathura          |
+| Email Client         | Neomutt          |
+| Wallpaper            | #1c1c1c          |
