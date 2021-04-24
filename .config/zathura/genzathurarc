@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. $HOME/.cache/wal/colors.sh
+. ./test.sh
 
 cat <<CONF
 set recolor "true"
