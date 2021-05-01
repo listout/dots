@@ -32,11 +32,3 @@ set mailcap_path=~/.config/neomutt/mailcap
 ## ACCOUNT 1
 source "~/.config/neomutt/gmail_main"
 folder-hook $folder 'source ~/.config/neomutt/gmail_main'
-
-## ACCOUNT 2
-source "~/.config/neomutt/gmail_work"
-folder-hook $folder 'source ~/.config/neomutt/gmail_work'
-
-## Shortcuts
-macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/gmail_main<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/gmail_work<enter><change-folder>!<enter>'
