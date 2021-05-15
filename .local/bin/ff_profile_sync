@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /home/gogo/.mozilla/firefox/
+if test -d /home/gogo/.mozilla/firefox/1boids0p.default-release;then
+if test -d /home/gogo/.mozilla/firefox/1boids0p.default-release.bac;then
+rsync -a --delete /home/gogo/.mozilla/firefox/1boids0p.default-release/ \
+	/home/gogo/.mozilla/firefox/1boids0p.default-release.bac/
+fi;fi
