@@ -1,4 +1,10 @@
 # History search
+
+dir=$HOME'/.cache/zsh'
+if [[ ! -e $dir ]]; then
+	mkdir -p $dir
+fi
+
 HISTFILE=~/.cache/zsh/zsh_history
 HISTSIZE=90000
 SAVEHIST=90000
