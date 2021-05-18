@@ -19,6 +19,9 @@ XF86MonBrightnessDown
 super + Return
 	urxvt
 
+super + shift + Return
+	kitty
+
 # program launcher
 super + @space
 	rofi -show drun
