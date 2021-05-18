@@ -21,6 +21,7 @@ bspc config focused_border_color '#5b5f71'
 wmname LG3D
 
 bspc rule -a URxvt state=floating
+bspc rule -a kitty state=floating
 bspc rule -a KeePassXC state=floating
 bspc rule -a Thunar state=floating
 bspc rule -a Lxappearance state=floating
