@@ -27,3 +27,5 @@ set render-loading-fg "#b5b4c9"
 set window-title-home-tilde true
 set statusbar-basename true
 set selection-clipboard clipboard
+
+# vim: set ft=config:
