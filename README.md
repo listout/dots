@@ -2,6 +2,11 @@
 
 Personal dot files
 
+## Fonts
+
+- [Tamzen for Powerline](https://github.com/sunaku/tamzen-font.git)
+- [Cascadia Code](https://github.com/microsoft/cascadia-code.git)
+
 ## Key bindings
 
 Super is modkey
