@@ -22,7 +22,7 @@ Personal dot files
 
 ## Fonts
 
-- [Tamzen for Powerline](https://github.com/sunaku/tamzen-font.git)
+- [Dina](https://www.dcmembers.com/jibsen/download/61/)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code.git)
 
 ## Key bindings
