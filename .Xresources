@@ -1,7 +1,7 @@
 URxvt.scrollBar: flase
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=15
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:Dina:regular:pixelsize=10
+URxvt.boldFont: xft:Dina:bold:pixelsize=10
 
 !URxvt.background: black
 !URxvt.foreground: white
