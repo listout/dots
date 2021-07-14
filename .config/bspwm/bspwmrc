@@ -27,3 +27,4 @@ bspc rule -a Thunar state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a "Gnome-system-monitor" state=floating
 bspc rule -a "Gufw.py" state=floating
+bspc rule -a "Animate" state=floating
