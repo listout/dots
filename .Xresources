@@ -1,7 +1,7 @@
 URxvt.scrollBar: flase
 
-URxvt.font: xft:Dina:regular:pixelsize=12
-URxvt.boldFont: xft:Dina:bold:pixelsize=12
+URxvt.font: xft:UW Ttyp0:pixelsize=14
+URxvt.boldFont: xft:Uw Ttyp0:bold:pixelsize=14
 
 !URxvt.background: black
 !URxvt.foreground: white
