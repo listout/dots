@@ -22,7 +22,7 @@ Personal dot files
 
 ## Fonts
 
-- [Dina](https://www.dcmembers.com/jibsen/download/61/)
+- [Uw Ttyp0](https://people.mpi-inf.mpg.de/~uwe/misc/uw-ttyp0/)
 - [Cascadia Code](https://github.com/microsoft/cascadia-code.git)
 
 ## Key bindings
