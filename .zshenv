@@ -7,8 +7,8 @@ export PATH=/home/gogo/.fnm:$PATH
 eval "`fnm env`"
 
 export EDITOR=/usr/bin/nvim
-export PAGER="/usr/bin/nvim -u NONE +Man!"
-export MANPAGER="/usr/bin/nvim -u NONE +Man!"
+export PAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
