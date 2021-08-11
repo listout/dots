@@ -2,8 +2,6 @@
 
 Personal dot files
 
-![](screens/screen.png)
-
 ## Application
 
 | Apps                 | I use             |
