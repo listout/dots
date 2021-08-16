@@ -29,3 +29,5 @@ bspc rule -a "Gnome-system-monitor" state=floating
 bspc rule -a "Gufw.py" state=floating
 bspc rule -a "Animate" state=floating
 bspc rule -a "processing-app-Base" state=floating
+bspc rule -a Eom state=floating
+bspc rule -a feh state=floating
