@@ -3,8 +3,8 @@ configuration {
 	width:               30;
 	lines:               5;
 	show-icons:          true;
-	font:                "Mono 11";
-	terminal:            "urxvt";
+	font:                "Terminus (TTF) 09";
+	terminal:            "XTerm";
 	disable-history:     true;
 	sidebar-mode:        false;
 	tokenize:            true;
