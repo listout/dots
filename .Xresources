@@ -27,6 +27,28 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
+! XTerm config
+! copy paste
+xterm*VT100.Translations: #override \
+		Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+		Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
+! small menu
+XTerm.vt100.geometry: 80x32
+
+! Force utf-8
+XTerm.vt100.locale: false
+XTerm.vt100.utf8: true
+
+! Make alt key behave properly
+XTerm.vt100.metaSendsEscape: true
+
+! Number of lines saved
+XTerm.vt100.saveLines: 4096
+
+! Fontface
+XTerm.vt100.faceName: UW Ttyp0:pixelsize=13
+
 *.foreground: #b5b4c9
 *.background: #1c1c1c
 *.color0:     #2e313d
