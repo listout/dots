@@ -4,8 +4,8 @@ fpath+=$HOME/.config/zsh/pure
 autoload -U promptinit; promptinit
 
 # prompt symbols
-PURE_PROMPT_SYMBOL=λ
-PURE_PROMPT_VICMD_SYMBOL=ẟ
+PURE_PROMPT_SYMBOL=\>\>
+PURE_PROMPT_VICMD_SYMBOL=\<\<
 
 # turn on git stash status
 zstyle :prompt:pure:git:stash show yes
