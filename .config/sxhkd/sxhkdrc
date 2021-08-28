@@ -17,7 +17,7 @@ XF86MonBrightnessDown
 
 # terminal emulator
 super + Return
-	urxvt
+	xterm
 
 super + shift + Return
 	kitty
