@@ -1,74 +1,169 @@
 configuration {
-	modi:                "drun,windowcd,window";
-	width:               30;
-	lines:               5;
-	show-icons:          true;
-	font:                "Terminus (TTF) 09";
-	terminal:            "XTerm";
-	disable-history:     true;
-	sidebar-mode:        false;
-	tokenize:            true;
-	m:                   "-5";
-	line-margin:         2;
-	line-padding:        1;
-	separator-style:     "none";
-	hide-scrollbar:      true;
-	window-format:       "{w} {c}";
-	/*fullscreen: true;*/
-	columns:             1;
-	display-drun:        "𝛌:";
-	display-windowcd:    "𝛅:";
-	display-window:      "γ:";
-
-	/* vim key bindings */
-	kb-row-up:           "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
-	kb-row-down:         "Down,Control+j";
-	kb-accept-entry:     "Control+m,Return,KP_Enter";
-	kb-remove-to-eol:    "Control+Shift+e";
-	kb-mode-next:        "Shift+Right,Control+Tab,Control+l";
-	kb-mode-previous:    "Shift+Left,Control+Shift+Tab,Control+h";
-	kb-remove-char-back: "BackSpace";
+	font:                   "Cascadia Code 10";
+	modi:                   "drun,windowcd,window";
+	show-icons:             true;
+	display-drun:           "𝛌";
+	display-windowcd:       "𝛅";
+	display-window:         "γ";
+	window-format:          "[{w} ... {c} ... {t}";
+	click-to-exit:          true;
+	combi-hide-mode-prefix: false;
 }
 
 * {
 	bg: #1c1c1c;
 	fg: #b5b4c9;
 	accent: #fdfbee;
+	background-color: @bg;
+}
 
+window {
+	border: 0px;
+	border-color: @fg;
+	border-radius: 0px;
+	padding: 0px;
+	width: 35%;
+	height: 25%;
+}
+
+prompt {
+	spacing: 0;
+	border: 0;
+	text-color: @fg;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: " ";
+	margin: 0px 4px 0px 0px;
+	text-color: inherit;
+}
+
+entry {
+	spacing: 0;
+	text-color: @fg;
+}
+
+case-indicator {
+	spacing: 0;
+	text-color: @fg;
+}
+
+inputbar {
+	spacing: 0px;
+	text-color: @fg;
+	padding: 1px;
+	children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+
+mainbox {
+	border: 2px;
+	border-color: @fg;
+	padding: 20;
+}
+
+listview {
+	lines: 10;
+	columns: 1;
+	fixed-height: 0;
+	border: 0px;
+	border-color: @bg;
+	spacing: 4px;
+	scrollbar: false;
+	padding: 4px;
+}
+
+element-text {
+	background-color: #00000000;
+	text-color: inherit;
+}
+
+element-icon {
+	background-color: #00000000;
+	text-color: inherit;
+	size: 2.3ch;
+}
+
+element {
+	border: 0px;
+	padding: 1px;
+}
+
+element normal.normal {
 	background-color: @bg;
 	text-color: @fg;
 }
 
-window {
-	/*padding: 100px 300px 100px 300px; // top, right, bottom, left*/
-	padding:50px;
+element normal.urgent {
+	background-color: @bg;
+	text-color: @fg;
+}
+
+element normal.active {
+	background-color: @bg;
+	text-color: @fg;
+}
+
+element selected.normal {
+	background-color: @fg;
+	text-color: @bg;
+}
+
+element selected.urgent {
+	background-color: @fg;
+	text-color: @bg;
+}
+
+element selected.active {
+	background-color: @fg;
+	text-color: @bg;
+}
+
+element alternate.normal {
+	background-color: @bg;
+	text-color: @fg;
+}
+
+element alternate.active {
+	background-color: @bg;
+	text-color: @fg;
+}
+
+element alternate.urgent {
+	background-color: @bg;
+	text-color: @bg;
+}
+
+sidebar {
+	border: 0px;
+	border-color: @accent;
 	border-radius: 0px;
-	border: 3;
+}
+
+button {
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+	margin: 5px;
+	padding: 5px;
+	text-color: @fg;
+	border: 3px;
+	border-radius: 0px;
 	border-color: @fg;
 }
 
-prompt, entry {
-	text-color: @fg;
-	padding: 3px;
-}
-
-element {
-	border-radius: 0px;
-	padding: 3px;
-}
-
-element selected {
-	background-color: @fg;
-	text-color: @bg;
-}
-
 button selected {
-	background-color: @fg;
-	text-color: @bg;
-	border-radius: 0px;
-	padding: 0px;
+	text-color: @fg;
+	border: 3px;
+	border-radius: 20px;
+	border-color: @accent;
 }
 
-element-icon { size: 2.3ch ; }
+message {
+	border: 0px;
+	border-color: @accent;
+	padding: 1px;
+}
 
-// vim: set ft=css :
+textbox {
+	text-color: @fg;
+}
