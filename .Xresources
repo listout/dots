@@ -3,8 +3,8 @@ URxvt.scrollBar: flase
 URxvt.font: xft:UW Ttyp0:pixelsize=14
 URxvt.boldFont: xft:Uw Ttyp0:bold:pixelsize=14
 
-!URxvt.background: black
-!URxvt.foreground: white
+*.background: black
+*.foreground: white
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
@@ -48,24 +48,5 @@ XTerm.vt100.saveLines: 4096
 
 ! Fontface
 XTerm.vt100.faceName: UW Ttyp0:pixelsize=13
-
-*.foreground: #b5b4c9
-*.background: #1c1c1c
-*.color0:     #2e313d
-*.color8:     #5b5f71
-*.color1:     #cf8164
-*.color9:     #fe9f7c
-*.color2:     #76a065
-*.color10:    #92c47e
-*.color3:     #ab924c
-*.color11:    #d2b45f
-*.color4:     #8296b0
-*.color12:    #a0b9d8
-*.color5:     #a18daf
-*.color13:    #c6aed7
-*.color6:     #659ea2
-*.color14:    #7dc2c7
-*.color7:     #b5b4c9
-*.color15:    #f0ecfe
 
 ! vim: set filetype=xdefaults nomodeline:
