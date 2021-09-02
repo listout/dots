@@ -10,3 +10,6 @@
 	cmd = nvim -d $LOCAL $REMOTE
 [commit]
 	gpgsign = true
+[user]
+	email = listout@protonmail.com
+	name = listout
