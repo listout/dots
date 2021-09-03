@@ -1,7 +1,7 @@
 URxvt.scrollBar: flase
 
-URxvt.font: xft:UW Ttyp0:pixelsize=14
-URxvt.boldFont: xft:Uw Ttyp0:bold:pixelsize=14
+URxvt.font: xft:Dina:pixelsize=12
+URxvt.boldFont: xft:Dina:bold:pixelsize=12
 
 *.background: #080808
 *.foreground: #ebebeb
@@ -66,6 +66,6 @@ XTerm.vt100.metaSendsEscape: true
 XTerm.vt100.saveLines: 4096
 
 ! Fontface
-XTerm.vt100.faceName: UW Ttyp0:pixelsize=13
+XTerm.vt100.faceName: Dina:pixelsize=12
 
 ! vim: set filetype=xdefaults nomodeline:
