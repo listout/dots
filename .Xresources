@@ -1,8 +1,3 @@
-URxvt.scrollBar: flase
-
-URxvt.font: xft:Dina:pixelsize=12
-URxvt.boldFont: xft:Dina:bold:pixelsize=12
-
 *.background: #080808
 *.foreground: #ebebeb
 *.cursor: #9e9e9e
@@ -24,6 +19,13 @@ URxvt.boldFont: xft:Dina:bold:pixelsize=12
 *.color15: #dadada
 *.selection_background: #b2ceee
 *.selection_foreground: #080808
+
+! URxvt config
+URxvt.scrollBar: flase
+
+URxvt.font: xft:Dina:pixelsize=12
+URxvt.boldFont: xft:Dina:bold:pixelsize=12
+
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
