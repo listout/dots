@@ -12,7 +12,7 @@ border-color = #00000000
 background = #00000000
 foreground = #b5b4c9
 
-font-0="Uw Ttyp0:pixelsize=12;1"
+font-0="Dina:pixelsize=10;1"
 font-1="Siji:size=10;1"
 
 modules-right=memory cpu temperature pulseaudio date
