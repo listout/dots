@@ -10,7 +10,7 @@ border-size=1
 border-color = #00000000
 
 background = #00000000
-foreground = #b5b4c9
+foreground = #b2b2b2
 
 font-0="Dina:pixelsize=10;1"
 font-1="Siji:size=10;1"
@@ -92,7 +92,7 @@ label-focused=
 label-focused-padding=1
 label-occupied=
 label-occupied-padding=1
-label-occupied-foreground=#5e5c80
+label-occupied-foreground=#696969
 label-empty=
 label-empty-padding=1
 

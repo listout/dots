@@ -4,7 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ./.config/polybar/launch.sh &
-hsetroot -solid '#151515'
+hsetroot -solid '#000000'
 
 bspc monitor -d I II III IV V VI
 
