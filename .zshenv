@@ -1,5 +1,8 @@
 typeset -U PATH path
 path=("$HOME/.local/bin" "$path[@]")
+if [[ -d "$HOME/.platformio" ]]; then
+	path=("$HOME/.platformio/penv/bin" "$path[@]")
+fi
 export PATH
 
 # fnm
