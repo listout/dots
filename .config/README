@@ -1,0 +1,4 @@
+Very basic personal dotfiles.
+
+Default i3wm with no border, i3status as the bar (on top) and URxvt (and Kitty) as terminal. My editor of choice is Vim.
+Most of the configs are slightly modified defautls.
