@@ -23,8 +23,8 @@
 ! URxvt config
 URxvt.scrollBar: flase
 
-URxvt.font: xft:Dina:pixelsize=12
-URxvt.boldFont: xft:Dina:bold:pixelsize=12
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
@@ -47,27 +47,5 @@ URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
-
-! XTerm config
-! copy paste
-xterm*VT100.Translations: #override \
-		Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
-		Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
-
-! small menu
-XTerm.vt100.geometry: 80x32
-
-! Force utf-8
-XTerm.vt100.locale: false
-XTerm.vt100.utf8: true
-
-! Make alt key behave properly
-XTerm.vt100.metaSendsEscape: true
-
-! Number of lines saved
-XTerm.vt100.saveLines: 4096
-
-! Fontface
-XTerm.vt100.faceName: Dina:pixelsize=12
 
 ! vim: set filetype=xdefaults nomodeline:
