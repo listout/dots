@@ -2,7 +2,9 @@ set $mod Mod4
 
 font pango:mono 7
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id picom
+exec --no-startup-id hsetroot -solid '#000000'
 
 set $refresh_i3status killall -SIGUSR1 i3status
 
