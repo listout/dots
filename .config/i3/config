@@ -17,6 +17,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 floating_modifier $mod
 
+for_window [class="Thunar" instance="thunar"] floating enable
+
 bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Shift+Return exec --no-startup-id kitty
 
