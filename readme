@@ -4,7 +4,7 @@ These are my very basic dots. There are little to no modifications for
 everything other than my text editor, i.e. Vim/Neovim and zsh. Apart from that
 most configurations are the defaults.
 
-I've zsh is my shell of choice and most of the configurations are copied from
+I've zsh as my shell of choice and most of the configurations are copied from
 archwiki and some other internet resources. I don't use any form of
 pluing/framework.  The only external plugin I use for zsh is the theme (pure by
 sindresorhus).
