@@ -22,8 +22,8 @@ URxvt.cursorColor: #8ae234
 ! URxvt config
 URxvt.scrollBar: flase
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=15
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:ypn envypn:pixelsize=13
+URxvt.boldFont: xft:ypn envypn:bold
 
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
