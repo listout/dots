@@ -1,4 +1,5 @@
 # HTML
+text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -collapse_br_tags -dump %s; nametemplate=%s.html; copiousoutput
 text/html; /usr/bin/w3m -I %{charset} -T text/html; copiousoutput;
 text/plain; nvim %s
 
@@ -7,4 +8,5 @@ image/png; /usr/bin/feh %s
 image/jpeg; /usr/bin/feh %s
 
 #PDFs
+application/pdf; /usr/bin/zathura %s &
 application/pdf; /usr/bin/evince %s &

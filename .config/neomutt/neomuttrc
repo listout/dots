@@ -29,6 +29,16 @@ set arrow_cursor = "no" # Change `color indicator` depending
 # mailcap
 set mailcap_path=~/.config/neomutt/mailcap
 
+# automatically open html in mime
+auto_view text/html
+
+# sidebar
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats
+set sidebar_width = 25                  # Plenty of space
+set sidebar_divider_char = '│'          # Pretty line-drawing character
+
 ## ACCOUNT 1
 source "~/.config/neomutt/gmail_main"
 folder-hook $folder 'source ~/.config/neomutt/gmail_main'
