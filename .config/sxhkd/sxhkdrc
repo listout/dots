@@ -9,6 +9,8 @@ XF86AudioLowerVolume
 	pactl set-sink-volume 0 -05%
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
+XF86AudioMicMute
+	pactl set-source-mute 0 toggle
 
 XF86MonBrightnessUp
 	xbacklight -inc 5
@@ -17,7 +19,7 @@ XF86MonBrightnessDown
 
 # terminal emulator
 super + Return
-	xterm
+	urxvt
 
 super + shift + Return
 	kitty
