@@ -3,10 +3,13 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/bin/kdeconnect-indicator &
+/usr/bin/nm-applet &
+sh ~/Documents/scoll_trackball.sh
 ./.config/polybar/launch.sh &
-hsetroot -solid '#000000'
+hsetroot -solid '#1c1c1c'
 
-bspc monitor -d I II III IV V VI
+bspc monitor -d I II III IV V VI VII VIII IX
 
 bspc config border_width         2
 bspc config window_gap           1
