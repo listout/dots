@@ -28,15 +28,15 @@ tray-maxsize=16
 type=internal/battery
 
 battery=BAT0
-adapter=ADP0
+adapter=AC
 
 poll-interval=5
-full-at=98
+full-at=99
 
 time-format=%H:%M
 
-label-discharging= %percentage%%
-label-charging= %percentage%%
+label-discharging= %time% %percentage%%
+label-charging= %time% %percentage%%
 label-full= %percentage%%
 
 format-discharging=<label-discharging>
@@ -56,8 +56,8 @@ label=%time%
 
 [module/temperature]
 type=internal/temperature
-interval=0.5
-thermal-zone=0
+interval=1.0
+hwmon-path=/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input
 base-temperature=38
 warn-temperature=70
 format=<label>
