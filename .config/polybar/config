@@ -31,7 +31,7 @@ battery=BAT0
 adapter=AC
 
 poll-interval=5
-full-at=99
+full-at=98
 
 time-format=%H:%M
 
@@ -47,12 +47,12 @@ format-full=<label-full>
 type=internal/date
 interval=1.0
 date=%d-%m-%Y%
-time=%I:%M %d %B
+time=%I:%M
 date-alt=%A, %d %B %Y
 time-alt=%I:%M:%S %A, %d %B %Y
 
 format= <label>
-label=%time%
+label=%time% %date%
 
 [module/temperature]
 type=internal/temperature
