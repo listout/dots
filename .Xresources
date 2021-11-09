@@ -22,8 +22,8 @@ URxvt.cursorColor: #8ae234
 ! URxvt config
 URxvt.scrollBar: flase
 
-URxvt.font: xft:xos4 Terminus:pixelsize=16
-URxvt.boldFont: xft:xos4 Terminus:bold
+URxvt.font: xft:UW Ttyp0:pixelsize=16
+URxvt.boldFont: xft:UW Ttyp0:bold
 
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
