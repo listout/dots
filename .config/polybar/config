@@ -48,7 +48,6 @@ type=internal/date
 interval=1.0
 date=%d-%m-%Y%
 time=%I:%M
-date-alt=%A, %d %B %Y
 time-alt=%I:%M:%S %A, %d %B %Y
 
 format= <label>
