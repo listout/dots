@@ -21,8 +21,8 @@ URxvt.foreground:  #b5b4c9
 ! URxvt config
 URxvt.scrollBar: flase
 
-URxvt.font: xft:UW Ttyp0:pixelsize=16
-URxvt.boldFont: xft:UW Ttyp0:bold
+URxvt.font: xft:TamzenForPowerline:pixelsize=16
+URxvt.boldFont: xft:TamzenForPowerline:bold
 
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
