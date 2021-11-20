@@ -1,8 +1,9 @@
 configuration {
-	font:                   "Mono 14";
+	font:                   "Mono Bold 12";
 	modi:                   "drun,windowcd,window";
 	show-icons:             true;
 	display-drun:           "𝛌";
+	drun-display-format:    "{name}";
 	display-windowcd:       "𝛅";
 	display-window:         "γ";
 	window-format:          "[{w} ... {c} ... {t}";
@@ -18,7 +19,7 @@ configuration {
 }
 
 window {
-	border: 0px;
+	border: 5px;
 	border-color: @fg;
 	border-radius: 0px;
 	padding: 0px;
@@ -35,7 +36,7 @@ prompt {
 textbox-prompt-colon {
 	expand: false;
 	str: " ";
-	margin: 0px 4px 0px 0px;
+	/*margin: 0px 4px 0px 0px;*/
 	text-color: inherit;
 }
 
@@ -52,36 +53,38 @@ case-indicator {
 inputbar {
 	spacing: 0px;
 	text-color: @fg;
-	padding: 1px;
+	padding: 1em;
 	children: [prompt, textbox-prompt-colon, entry, case-indicator];
 }
 
 mainbox {
-	border: 2px;
+	/*border: 1em;*/
 	border-color: @fg;
-	padding: 20;
+	/*padding: 5em;*/
 }
 
 listview {
-	lines: 10;
-	columns: 1;
+	lines: 5;
+	columns: 2;
 	fixed-height: 0;
 	border: 0px;
 	border-color: @bg;
-	spacing: 4px;
+	spacing: 0.2em;
 	scrollbar: false;
-	padding: 4px;
+	padding: 1em;
 }
 
 element-text {
 	background-color: #00000000;
 	text-color: inherit;
+	vertical-align: 0.5;
 }
 
 element-icon {
 	background-color: #00000000;
 	text-color: inherit;
-	size: 2.3ch;
+	/*size: 2.3ch;*/
+	size: 1.2em;
 }
 
 element {
@@ -167,3 +170,5 @@ message {
 textbox {
 	text-color: @fg;
 }
+
+// vim: set ft=css:
