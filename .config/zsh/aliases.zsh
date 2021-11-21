@@ -9,6 +9,7 @@ alias rm='rm -ir'
 alias mkdir='mkdir -vp'
 alias less='/usr/share/nvim/runtime/macros/less.sh'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
