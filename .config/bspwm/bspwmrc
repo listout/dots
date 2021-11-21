@@ -34,3 +34,4 @@ bspc rule -a feh state=floating
 bspc rule -a XTerm state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a '*:slack' desktop='^9' state=tiled follow=off
+bspc rule -a '*:megasync' state=floating
