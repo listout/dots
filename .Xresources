@@ -32,8 +32,8 @@ XTerm.vt100.translations: #override \n\
 	Ctrl <Key>R: restore() \n\
 	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
 	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
-XTerm.vt100.faceName: Source Code Pro:semibold:size=10
-XTerm.vt100.boldFont: Source Code Pro:bold:size=10
+XTerm.vt100.faceName: Terminus:pixelsize=16
+XTerm.vt100.boldFont: Terminus:bold:pixelsize=16
 
 ! URxvt config
 URxvt.scrollBar: flase
