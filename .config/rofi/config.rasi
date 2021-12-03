@@ -1,5 +1,5 @@
 configuration {
-	font:                   "Mono Bold 12";
+	font:                   "Mono 11";
 	modi:                   "drun,windowcd,window";
 	show-icons:             true;
 	display-drun:           "𝛌";
