@@ -10,7 +10,7 @@ border-size=1
 border-color = #00000000
 
 background = #00000000
-foreground = #b2b2b2
+foreground = #ffffff
 
 font-0="Dina:pixelsize=10;1"
 font-1="Siji:size=10;1"
