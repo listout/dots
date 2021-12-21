@@ -62,8 +62,8 @@ override-redirect = false
 font-0="Mono:size=9;1"
 font-1="Symbols Nerd Font:size=9;1"
 
-modules-right=memory cpu temperature pulseaudio date
-modules-left=battery network
+modules-right=cpu temperature pulseaudio date
+modules-left=battery network memory
 modules-center=bspwm
 
 ;--------;
@@ -109,12 +109,12 @@ format-full=<label-full>
 [module/date]
 type=internal/date
 interval=1.0
-date=%d-%m-%Y%
-time= %I:%M
+date=%A %d
+time=%I:%M
 time-alt= %I:%M:%S %A, %d %B %Y
 
 format=<label>
-label=%time% %date%
+label=%date% %time%
 
 [module/temperature]
 type=internal/temperature
