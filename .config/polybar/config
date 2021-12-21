@@ -71,7 +71,7 @@ modules-center=bspwm
 ;--------;
 
 background = #0d0b0a
-foreground = ${colors.color7}
+foreground = ${colors.color15}
 border-color = 0
 
 ;---------------;
