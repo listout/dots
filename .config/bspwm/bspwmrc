@@ -7,8 +7,8 @@ picom &
 /usr/bin/nm-applet &
 sh ~/Documents/scoll_trackball.sh
 ./.config/polybar/launch.sh &
-#hsetroot -solid '#1c1c1c'
-feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
+hsetroot -solid '#222833'
+#feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
