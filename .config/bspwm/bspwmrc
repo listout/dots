@@ -3,12 +3,14 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/bin/kdeconnect-indicator &
-/usr/bin/nm-applet &
+kdeconnect-indicator &
+#/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh
 ./.config/polybar/launch.sh &
 hsetroot -solid '#222833'
 #feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
+
+
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
@@ -29,6 +31,8 @@ bspc rule -a kitty state=floating
 bspc rule -a Thunar state=floating
 bspc rule -a Lxappearance state=floating
 bspc rule -a "Gnome-system-monitor" state=floating
+bspc rule -a Gnome-disks state=floating
+bspc rule -a Gnome-calculator state=floating
 bspc rule -a "Gufw.py" state=floating
 bspc rule -a Eom state=floating
 bspc rule -a feh state=floating
@@ -36,3 +40,14 @@ bspc rule -a XTerm state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a '*:slack' desktop='^9' state=tiled follow=off
 bspc rule -a '*:megasync' state=floating
+bspc rule -a processing-app-Base state=floating
+
+
+bspc subscribe node_state | while read -r _ _ _ node state status; do
+if [[ "$state" == "floating" ]]; then
+	case "$status" in
+		off) xprop -id "$node" -remove _COMPTON_SHADOW;;
+		on) xprop -id "$node" -f _COMPTON_SHADOW 32c -set _COMPTON_SHADOW 1;;
+	esac
+fi
+done
