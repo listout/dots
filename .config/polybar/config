@@ -52,7 +52,7 @@ border-left-size = 0
 ;----------;
 
 bottom = false
-monitor = eDP
+;monitor = eDP-1
 override-redirect = false
 
 ;-------;
@@ -160,7 +160,7 @@ label-empty-padding=1
 
 [module/network]
 type=internal/network
-interface=wlp3s0
+interface=wlan0
 interval=3.0
 label-connected= %essid%
 label-disconnected=睊
