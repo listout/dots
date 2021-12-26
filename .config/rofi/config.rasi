@@ -12,8 +12,8 @@ configuration {
 }
 
 * {
-	bg: #121212;
-	fg: #dedede;
+	bg: #111116;
+	fg: #cecccf;
 	accent: #ffffff;
 	background-color: @bg;
 }

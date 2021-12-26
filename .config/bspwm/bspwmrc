@@ -3,11 +3,11 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-kdeconnect-indicator &
 #/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh
 ./.config/polybar/launch.sh &
-hsetroot -solid '#222833'
+hsetroot -solid '#222833' &
+/usr/bin/kdeconnect-indicator &
 #feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
 
 
