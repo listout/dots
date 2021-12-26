@@ -86,7 +86,6 @@ module-margin = 3
 tray-position = right
 tray-detached = false
 
-
 [module/battery]
 type=internal/battery
 
