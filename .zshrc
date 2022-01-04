@@ -1,4 +1,7 @@
-# Created by newuser for 5.8
+# Created by gogo for 5.8
+
+# Profiling
+#zmodload zsh/zprof
 
 ## Use vim mode
 bindkey -v
@@ -12,3 +15,7 @@ source $HOME/.config/zsh/prompt.zsh
 source $HOME/.config/zsh/history_search.zsh
 source $HOME/.config/zsh/aliases.zsh
 source $HOME/.config/zsh/help_command.zsh
+
+# Profiling
+#zprof
+#time zsh -i -c exit
