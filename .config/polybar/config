@@ -1,36 +1,3 @@
-[colors]
-; Black
-color0 = #121418
-color8 = #675f54
-
-; Red
-color1 = #c94234
-color9 = #ff645a
-
-; Green
-color2 = #85c54c
-color10 = #98e036
-
-; Yellow
-color3 = #f5ae2e
-color11 = #e0d561
-
-; Blue
-color4 = #1398b9
-color12 = #5fdaff
-
-; Magenta
-color5 = #d0633d
-color13 = #ff9269
-
-; Cyan
-color6 = #509552
-color14 = #84f088
-
-; White
-color7 = #e5c6aa
-color15 = #f6f7ec
-
 [bar/mybar]
 
 ;------------;
@@ -38,14 +5,11 @@ color15 = #f6f7ec
 ;------------;
 
 width = 100%
-height = 22
+height = 20
 offset-y = 0
 offset-x = 0
 
-border-top-size = 0
-border-bottom-size = 0
-border-right-size = 0
-border-left-size = 0
+border-size = 0
 
 ;----------;
 ; LOCATION ;
@@ -59,8 +23,11 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0="Mono:size=10;1"
-font-1="Symbols Nerd Font:size=9;1"
+font-0="UW Ttyp0:pixelsize=14;1"
+
+;---------;
+; MODULES ;
+;---------;
 
 modules-right=cpu temperature pulseaudio date
 modules-left=battery network memory
@@ -70,21 +37,17 @@ modules-center=bspwm
 ; COLORS ;
 ;--------;
 
-background = #0d0b0a
-foreground = ${colors.color15}
-border-color = 0
+foreground = #1a1a24
+background = #2c2e3e
 
 ;---------------;
 ; MISCELLANEOUS ;
 ;---------------;
 
 fixed-center = true
-padding-left = 2
-padding-right = 2
-module-margin = 3
-
 tray-position = right
 tray-detached = false
+module-margin-left = 1
 
 [module/battery]
 type=internal/battery
@@ -97,9 +60,21 @@ full-at=98
 
 time-format=%H:%M
 
-label-discharging=%time% %percentage%%
-label-charging=%time% %percentage%%
-label-full= %percentage%%
+label-discharging=%time% %percentage%
+label-charging=%time% %percentage%
+label-full=BAT0: %percentage%
+
+label-full-foreground = #cddbf9
+label-full-background = #2c2e3e
+label-full-padding = 2
+
+label-charging-foreground = #cddbf9
+label-charging-background = #2c2e3e
+label-charging-padding = 2
+
+label-discharging-foreground = #cddbf9
+label-discharging-background = #2c2e3e
+label-discharging-padding = 2
 
 format-discharging=<label-discharging>
 format-charging=<label-charging>
@@ -110,10 +85,13 @@ type=internal/date
 interval=1.0
 date=%A %d
 time=%I:%M
-time-alt= %I:%M:%S %A, %d %B %Y
+time-alt=%I:%M:%S %A, %d %B %Y
 
 format=<label>
 label=%date% %time%
+label-foreground = #cddbf9
+label-background = #2c2e3e
+label-padding = 2
 
 [module/temperature]
 type=internal/temperature
@@ -123,45 +101,82 @@ base-temperature=38
 warn-temperature=70
 format=<label>
 format-warn=<label-warn>
-label= %temperature-c%
+label=%temperature-c%
 label-warn= %temperature-c%
+
+label-foreground = #cddbf9
+label-background = #2c2e3e
+label-padding = 2
+label-warn-foreground = #cddbf9
+label-warn-background = #2c2e3e
+label-warn-padding = 2
 
 [module/cpu]
 type=internal/cpu
 interval=0.5
 format=<label>
-label= %percentage%%
+label=CPU: %percentage%%
+
+label-foreground = #cddbf9
+label-background = #2c2e3e
+label-padding = 2
 
 [module/memory]
 type=internal/memory
 interval=3
 format=<label>
-label= %gb_used%
+label=Mem: %gb_used%
+
+label-foreground = #cddbf9
+label-background = #2c2e3e
+label-padding = 2
 
 [module/pulseaudio]
 type=internal/pulseaudio
 sink=alsa_output.pci-0000_00_1b.0.analog-stereo
 format=<label-volume>
-label-volume= %percentage%%
-label-muted=婢
+label-volume=Vol: %percentage%%
+label-muted=muted
 click-right=pavucontrol
+
+label-volume-foreground = #cddbf9
+label-volume-background = #2c2e3e
+label-volume-padding = 2
+
+label-muted-foreground = #cddbf9
+label-muted-background = #2c2e3e
+label-muted-padding = 2
 
 [module/bspwm]
 type=internal/bspwm
 format=<label-state> <label-mode>
-label-focused=
-label-focused-padding=1
-label-occupied=
-label-occupied-padding=1
-label-occupied-foreground=#696969
-label-empty=
-label-empty-padding=1
+label-focused=%name%
+label-focused-padding=2
+label-occupied=%name%
+label-occupied-padding=2
+label-empty=%name%
+label-empty-padding=2
+
+label-focused-foreground = #e6e6f1
+label-focused-background = #2c2e3e
+label-occupied-foreground = #708190
+label-occupied-background = #2c2e3e
+label-empty-foreground = #cddbf9
+label-empty-background = #2c2e3e
 
 [module/network]
 type=internal/network
 interface=wlan0
 interval=3.0
-label-connected= %essid%
-label-disconnected=睊
+label-connected=%local_ip%
+label-disconnected=""
 
-; vim: set ft=dosini nomodeline:networknetwork
+label-connected-foreground = #cddbf9
+label-connected-background = #2c2e3e
+label-connected-padding = 2
+
+label-disconnected-foreground = #cddbf9
+label-disconnected-background = #2c2e3e
+label-disconnected-padding = 2
+
+; vim: set ft=dosini nomodeline:
