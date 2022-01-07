@@ -1,22 +1,24 @@
 ! Colors [Jellybeans]
-*.foreground: #cecccf
-*.background: #111116
-*.color0:     #1b2b34
-*.color8:     #4f5b66
-*.color1:     #e06c75
-*.color9:     #ec5f67
-*.color2:     #99c794
-*.color10:    #99c794
-*.color3:     #fac863
-*.color11:    #fac863
-*.color4:     #6699cc
-*.color12:    #6699cc
-*.color5:     #c594c5
-*.color13:    #c594c5
-*.color6:     #5fb3b3
-*.color14:    #5fb3b3
-*.color7:     #a7adba
-*.color15:    #d8dee9
+*.foreground:           #e6e6f1
+*.background:           #1a1a24
+*.color0:               #44495e
+*.color8:               #3b3b4d
+*.color1:               #EBB9B9
+*.color9:               #cc9b9d
+*.color2:               #B1DBA4
+*.color10:              #A3CCAD
+*.color3:               #E6DFB8
+*.color11:              #d1ba97
+*.color4:               #CDDBF9
+*.color12:              #B8C9EA
+*.color5:               #F6BBE7
+*.color13:              #b294bb
+*.color6:               #CDDBF9
+*.color14:              #95C2D1
+*.color7:               #C6D0E9
+*.color15:              #63718B
+
+*.cursor:                #b8dceb
 
 ! XTerm config
 XTerm.vt100.locale: false
