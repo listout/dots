@@ -5,14 +5,13 @@ picom &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh
-./.config/polybar/launch.sh &
-hsetroot -solid '#222833' &
+$HOME/.config/polybar/launch.sh &
+hsetroot -solid '#2c2e3e' &
 /usr/bin/kdeconnect-indicator &
 #feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
 
-
-
-bspc monitor -d I II III IV V VI VII VIII IX
+# bspc config top_padding 27
+bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 bspc config border_width         2
 bspc config window_gap           1
