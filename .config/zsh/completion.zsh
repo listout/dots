@@ -1,5 +1,9 @@
 # From https://wiki.archlinux.org/index.php/Zsh
 
+### Keep the space after completion for some characters in zsh
+#from https://unix.stackexchange.com/a/174641
+ZLE_SPACE_SUFFIX_CHARS=$'|&'
+
 ### Handle command not found
 if [ -e /usr/share/doc/pkgfile/command-not-found.zsh ]; then
 	source /usr/share/doc/pkgfile/command-not-found.zsh
