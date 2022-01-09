@@ -20,8 +20,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config normal_border_color '#9e9e9e'
-bspc config focused_border_color '#ebebeb'
+bspc config normal_border_color '#44495e'
+bspc config focused_border_color '#b1dba4'
 
 wmname LG3D
 
