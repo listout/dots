@@ -157,9 +157,9 @@ label-occupied-padding=2
 label-empty=%name%
 label-empty-padding=2
 
-label-focused-foreground = #e6e6f1
+label-focused-foreground = #f6bbe7
 label-focused-background = #2c2e3e
-label-occupied-foreground = #708190
+label-occupied-foreground = #a3ccad
 label-occupied-background = #2c2e3e
 label-empty-foreground = #cddbf9
 label-empty-background = #2c2e3e
