@@ -12,9 +12,9 @@ configuration {
 }
 
 * {
-	bg: #111116;
-	fg: #cecccf;
-	accent: #ffffff;
+	bg: #1a1a24;
+	fg: #e6e6f1;
+	accent: #e6e6f1;
 	background-color: @bg;
 }
 
