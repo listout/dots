@@ -5,6 +5,14 @@
 
 ## Use vim mode
 bindkey -v
+# Yank to the system clipboard
+function vi-yank-xclip {
+	zle vi-yank
+	echo "$CUTBUFFER" | xsel -i -b
+}
+
+zle -N vi-yank-xclip
+bindkey -M vicmd 'y' vi-yank-xclip
 export KEYTIMEOUT=1
 
 ## Source other configs
