@@ -6,7 +6,7 @@ picom &
 #/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh
 $HOME/.config/polybar/launch.sh &
-hsetroot -solid '#2c2e3e' &
+hsetroot -solid '#1a1a24' &
 /usr/bin/kdeconnect-indicator &
 #feh --bg-fill $HOME/Pictures/wallpaper/flower_1920x1080.png &
 
