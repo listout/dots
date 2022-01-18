@@ -20,7 +20,7 @@ configuration {
 
 window {
 	border: 5px;
-	border-color: @fg;
+	border-color: #b1dba4;
 	border-radius: 0px;
 	padding: 0px;
 	width: 35%;
