@@ -18,8 +18,6 @@
 *.color7:               #C6D0E9
 *.color15:              #63718B
 
-*.cursor:                #b8dceb
-
 ! XTerm config
 XTerm.vt100.locale: false
 XTerm.vt100.utf8: true
