@@ -166,7 +166,7 @@ label-empty-background = #1a1a24
 
 [module/network]
 type=internal/network
-interface=wlp3s0
+interface=${env:DEFAULT_NETWORK_INTERFACE:wlan0}
 interval=3.0
 label-connected=%local_ip%
 label-disconnected=""
