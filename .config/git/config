@@ -1,0 +1,32 @@
+[core]
+	pager = nvim -R -
+[color]
+	ui = false
+[commit]
+	gpgsign = true
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = true
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE
+[difftool]
+	prompt = false
+;[pager]
+	;diff =
+[diff]
+	tool = vimdiff
+	;external = $HOME/.local/bin/vim_wrapper.sh
+[user]
+	email = listout@protonmail.com
+	name = listout
+[alias]
+	# list files which have changed since REVIEW_BASE
+	# (REVIEW_BASE defaults to 'master' in my zshrc)
+	files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
+
+	# Same as above, but with a diff stat instead of just names
+	# (better for interactive use)
+	stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
+	d = diff
+	dt = difftool
