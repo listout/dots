@@ -38,7 +38,7 @@ modules-center=bspwm
 ;--------;
 
 foreground = #2a1a24
-background = #1a1a24
+background = #001a1a24
 
 ;---------------;
 ; MISCELLANEOUS ;
@@ -65,15 +65,15 @@ label-charging=%time% %percentage%
 label-full=BAT0: %percentage%
 
 label-full-foreground = #cddbf9
-label-full-background = #1a1a24
+label-full-background = #001a1a24
 label-full-padding = 2
 
 label-charging-foreground = #cddbf9
-label-charging-background = #1a1a24
+label-charging-background = #001a1a24
 label-charging-padding = 2
 
 label-discharging-foreground = #cddbf9
-label-discharging-background = #1a1a24
+label-discharging-background = #001a1a24
 label-discharging-padding = 2
 
 format-discharging=<label-discharging>
@@ -90,7 +90,7 @@ time-alt=%I:%M:%S %A, %d %B %Y
 format=<label>
 label=%date% %time%
 label-foreground = #cddbf9
-label-background = #1a1a24
+label-background = #001a1a24
 label-padding = 2
 
 [module/temperature]
@@ -105,10 +105,10 @@ label=TEMP: %temperature-c%
 label-warn=TEMP: %temperature-c%
 
 label-foreground = #cddbf9
-label-background = #1a1a24
+label-background = #001a1a24
 label-padding = 2
 label-warn-foreground = #cddbf9
-label-warn-background = #1a1a24
+label-warn-background = #001a1a24
 label-warn-padding = 2
 
 [module/cpu]
@@ -118,7 +118,7 @@ format=<label>
 label=CPU: %percentage%%
 
 label-foreground = #cddbf9
-label-background = #1a1a24
+label-background = #001a1a24
 label-padding = 2
 
 [module/memory]
@@ -128,7 +128,7 @@ format=<label>
 label=Mem: %gb_used%
 
 label-foreground = #cddbf9
-label-background = #1a1a24
+label-background = #001a1a24
 label-padding = 2
 
 [module/pulseaudio]
@@ -140,11 +140,11 @@ label-muted=muted
 click-right=pavucontrol
 
 label-volume-foreground = #cddbf9
-label-volume-background = #1a1a24
+label-volume-background = #001a1a24
 label-volume-padding = 2
 
 label-muted-foreground = #cddbf9
-label-muted-background = #1a1a24
+label-muted-background = #001a1a24
 label-muted-padding = 2
 
 [module/bspwm]
@@ -158,11 +158,11 @@ label-empty=%name%
 label-empty-padding=2
 
 label-focused-foreground = #f6bbe7
-label-focused-background = #1a1a24
+label-focused-background = #001a1a24
 label-occupied-foreground = #a3ccad
-label-occupied-background = #1a1a24
+label-occupied-background = #001a1a24
 label-empty-foreground = #cddbf9
-label-empty-background = #1a1a24
+label-empty-background = #001a1a24
 
 [module/network]
 type=internal/network
@@ -172,11 +172,11 @@ label-connected=%local_ip%
 label-disconnected=""
 
 label-connected-foreground = #cddbf9
-label-connected-background = #1a1a24
+label-connected-background = #001a1a24
 label-connected-padding = 2
 
 label-disconnected-foreground = #cddbf9
-label-disconnected-background = #1a1a24
+label-disconnected-background = #001a1a24
 label-disconnected-padding = 2
 
 ; vim: set ft=dosini nomodeline:
