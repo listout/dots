@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh
 $HOME/.config/polybar/launch.sh &
