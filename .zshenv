@@ -6,6 +6,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 # fnm
 export PATH=/home/gogo/.fnm:$PATH
+export PATH=/home/gogo/.local/bin:$PATH
 eval "`fnm env`"
 
 export EDITOR=/usr/bin/nvim
