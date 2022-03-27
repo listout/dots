@@ -6,9 +6,9 @@ picom &
 #/usr/bin/nm-applet &
 sh $HOME/Documents/scroll_trackball.sh &
 $HOME/.config/polybar/launch.sh &
-#hsetroot -solid '#1a1a24' &
+hsetroot -solid '#1c1c1c' &
 /usr/bin/kdeconnect-indicator &
-feh --bg-fill $HOME/wallpaper/waves.png
+#feh --bg-fill $HOME/wallpaper/waves.png
 
 # bspc config top_padding 27
 bspc monitor -d 1 2 3 4 5 6 7 8 9
@@ -20,8 +20,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config normal_border_color '#44495e'
-bspc config focused_border_color '#b1dba4'
+bspc config normal_border_color '#2e313d'
+bspc config focused_border_color '#5b5f71'
 
 wmname LG3D
 

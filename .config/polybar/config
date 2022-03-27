@@ -1,3 +1,11 @@
+;--------;
+; COLORS ;
+;--------;
+
+[colors]
+foreground = #b5b4c9
+background = #1c1c1c
+
 [bar/mybar]
 
 ;------------;
@@ -11,6 +19,9 @@ offset-x = 0
 
 border-size = 0
 
+background = ${colors.background}
+foreground = ${colors.foreground}
+
 ;----------;
 ; LOCATION ;
 ;----------;
@@ -23,7 +34,7 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0="UW Ttyp0:pixelsize=14;1"
+font-0="ypn envypn:pixelsize=11;1"
 
 ;---------;
 ; MODULES ;
@@ -33,12 +44,6 @@ modules-right=cpu temperature pulseaudio date
 modules-left=battery network memory
 modules-center=bspwm
 
-;--------;
-; COLORS ;
-;--------;
-
-foreground = #2a1a24
-background = #001a1a24
 
 ;---------------;
 ; MISCELLANEOUS ;
@@ -64,16 +69,16 @@ label-discharging=%time% %percentage%
 label-charging=%time% %percentage%
 label-full=BAT0: %percentage%
 
-label-full-foreground = #cddbf9
-label-full-background = #001a1a24
+label-full-foreground = ${colors.foreground}
+label-full-background = ${colors.background}
 label-full-padding = 2
 
-label-charging-foreground = #cddbf9
-label-charging-background = #001a1a24
+label-charging-foreground = ${colors.foreground}
+label-charging-background = ${colors.background}
 label-charging-padding = 2
 
-label-discharging-foreground = #cddbf9
-label-discharging-background = #001a1a24
+label-discharging-foreground = ${colors.foreground}
+label-discharging-background = ${colors.background}
 label-discharging-padding = 2
 
 format-discharging=<label-discharging>
@@ -89,8 +94,8 @@ time-alt=%I:%M:%S %A, %d %B %Y
 
 format=<label>
 label=%date% %time%
-label-foreground = #cddbf9
-label-background = #001a1a24
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 label-padding = 2
 
 [module/temperature]
@@ -104,11 +109,11 @@ format-warn=<label-warn>
 label=TEMP: %temperature-c%
 label-warn=TEMP: %temperature-c%
 
-label-foreground = #cddbf9
-label-background = #001a1a24
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 label-padding = 2
-label-warn-foreground = #cddbf9
-label-warn-background = #001a1a24
+label-warn-foreground = ${colors.foreground}
+label-warn-background = ${colors.background}
 label-warn-padding = 2
 
 [module/cpu]
@@ -117,8 +122,8 @@ interval=0.5
 format=<label>
 label=CPU: %percentage%%
 
-label-foreground = #cddbf9
-label-background = #001a1a24
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 label-padding = 2
 
 [module/memory]
@@ -127,8 +132,8 @@ interval=3
 format=<label>
 label=Mem: %gb_used%
 
-label-foreground = #cddbf9
-label-background = #001a1a24
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
 label-padding = 2
 
 [module/pulseaudio]
@@ -139,12 +144,12 @@ label-volume=Vol: %percentage%%
 label-muted=muted
 click-right=pavucontrol
 
-label-volume-foreground = #cddbf9
-label-volume-background = #001a1a24
+label-volume-foreground = ${colors.foreground}
+label-volume-background = ${colors.background}
 label-volume-padding = 2
 
-label-muted-foreground = #cddbf9
-label-muted-background = #001a1a24
+label-muted-foreground = ${colors.foreground}
+label-muted-background = ${colors.background}
 label-muted-padding = 2
 
 [module/bspwm]
@@ -157,12 +162,12 @@ label-occupied-padding=2
 label-empty=%name%
 label-empty-padding=2
 
-label-focused-foreground = #f6bbe7
-label-focused-background = #001a1a24
-label-occupied-foreground = #a3ccad
-label-occupied-background = #001a1a24
-label-empty-foreground = #cddbf9
-label-empty-background = #001a1a24
+label-focused-foreground = #c6aed7
+label-focused-background = ${colors.background}
+label-occupied-foreground = #8296b0
+label-occupied-background = ${colors.background}
+label-empty-foreground = #5b5f71
+label-empty-background = ${colors.background}
 
 [module/network]
 type=internal/network
@@ -171,12 +176,12 @@ interval=3.0
 label-connected=%local_ip%
 label-disconnected=""
 
-label-connected-foreground = #cddbf9
-label-connected-background = #001a1a24
+label-connected-foreground = ${colors.foreground}
+label-connected-background = ${colors.background}
 label-connected-padding = 2
 
-label-disconnected-foreground = #cddbf9
-label-disconnected-background = #001a1a24
+label-disconnected-foreground = ${colors.foreground}
+label-disconnected-background = ${colors.background}
 label-disconnected-padding = 2
 
 ; vim: set ft=dosini nomodeline:
