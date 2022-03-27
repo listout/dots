@@ -1,30 +1,30 @@
 configuration {
-	font:                   "Mono 11";
+	font:                   "Terminus 10";
 	modi:                   "drun,windowcd,window";
-	show-icons:             true;
-	display-drun:           "𝛌";
+	show-icons:             false;
+	display-drun:           "run";
 	drun-display-format:    "{name}";
-	display-windowcd:       "𝛅";
-	display-window:         "γ";
+	display-windowcd:       "";
+	display-window:         "";
 	window-format:          "[{w} ... {c} ... {t}";
 	click-to-exit:          true;
 	combi-hide-mode-prefix: false;
 }
 
 * {
-	bg: #1a1a24;
-	fg: #e6e6f1;
-	accent: #e6e6f1;
+	bg: #1c1c1c;
+	fg: #b5b4c9;
+	accent: #b5b4c9;
 	background-color: @bg;
 }
 
 window {
-	border: 5px;
-	border-color: #b1dba4;
+	border: 2px;
+	border-color: #5b5f71;
 	border-radius: 0px;
 	padding: 0px;
-	width: 35%;
-	height: 25%;
+	width: 20%;
+	height: 15%;
 }
 
 prompt {
@@ -65,13 +65,13 @@ mainbox {
 
 listview {
 	lines: 5;
-	columns: 2;
+	columns: 1;
 	fixed-height: 0;
 	border: 0px;
 	border-color: @bg;
 	spacing: 0.2em;
 	scrollbar: false;
-	padding: 1em;
+	padding: 0 20 0 20;
 }
 
 element-text {
