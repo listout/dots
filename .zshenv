@@ -5,9 +5,11 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
 # fnm
-export PATH=/home/gogo/.fnm:$PATH
+#export PATH=/home/gogo/.fnm:$PATH
+PATH="$HOME/.local/bin:$PATH"
 export PATH=/home/gogo/.local/bin:$PATH
-eval "`fnm env`"
+export npm_config_prefix="$HOME/.local"
+#eval "`fnm env`"
 
 export EDITOR=/usr/bin/nvim
 export PAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
