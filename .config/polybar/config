@@ -34,7 +34,7 @@ override-redirect = false
 ; FONTS ;
 ;-------;
 
-font-0="ypn envypn:pixelsize=11;1"
+font-0="Dina:pixelsize=11;1"
 
 ;---------;
 ; MODULES ;
@@ -171,8 +171,8 @@ label-empty-background = ${colors.background}
 
 [module/network]
 type=internal/network
-interface=${env:DEFAULT_NETWORK_INTERFACE:wlp2s0}
-interval=3.0
+interface=wlan0
+interval=1.0
 label-connected=%local_ip%
 label-disconnected=""
 
