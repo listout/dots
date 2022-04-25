@@ -14,6 +14,8 @@ if [ -d "$HOME/esp/esp-idf" ]
 then
 	alias get_idf='. $HOME/esp/esp-idf/export.sh'
 	export MENUCONFIG_STYLE=monochrome
+	export IDF_CCACHE_ENABLE=1
+	export IOT_SOLUTION_PATH=~/esp/esp-iot-solution
 fi
 
 export LESS=-R
