@@ -106,7 +106,7 @@ base-temperature=38
 warn-temperature=70
 format=<label>
 format-warn=<label-warn>
-label=TEMP: %temperature-c%
+label=Temp: %temperature-c%
 label-warn=TEMP: %temperature-c%
 
 label-foreground = ${colors.foreground}
@@ -173,7 +173,7 @@ label-empty-background = ${colors.background}
 type=internal/network
 interface=wlan0
 interval=1.0
-label-connected=%local_ip%
+label-connected=%essid% %local_ip%
 label-disconnected=""
 
 label-connected-foreground = ${colors.foreground}
