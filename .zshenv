@@ -11,7 +11,6 @@ export PATH=/home/gogo/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
 
-export TERM=xterm-256color
 export EDITOR=/usr/bin/nvim
 export PAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
