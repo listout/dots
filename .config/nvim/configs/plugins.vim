@@ -4,7 +4,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'arzg/vim-substrata'
+Plug 'shaunsingh/nord.nvim'
 Plug 'ap/vim-css-color'
 
 Plug 'jiangmiao/auto-pairs'
@@ -14,7 +14,7 @@ Plug 'dhruvasagar/vim-table-mode', { 'for': ['markdown', 'markdown.pandoc'] }
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 
-Plug 'junegunn/goyo.vim', { 'for': ['markdown', 'markdown.pandoc', 'latex', 'tex'] }
+Plug 'junegunn/goyo.vim', { 'for': ['markdown', 'markdown.pandoc', 'latex', 'tex', 'c'] }
 Plug 'junegunn/limelight.vim', { 'for': ['markdown', 'markdown.pandoc', 'latex', 'tex'] }
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -27,8 +27,10 @@ Plug 'SirVer/ultisnips'
 Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'markdown.pandoc']}
 Plug 'lervag/vimtex', {'for': 'tex'}
 
+if &diff
+else
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
 Plug 'tpope/vim-fugitive', {'for': ['cpp', 'c']}
-Plug 'jackguo380/vim-lsp-cxx-highlight', { 'for': ['cpp', 'c'] }
-
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
