@@ -1,5 +1,5 @@
 [core]
-	pager = nvim -R -
+	pager = nvim -u NONE -R -
 [color]
 	ui = false
 [commit]
@@ -12,14 +12,17 @@
 	cmd = nvim -d $LOCAL $REMOTE
 [difftool]
 	prompt = false
-;[pager]
-	;diff =
 [diff]
 	tool = vimdiff
-	;external = $HOME/.local/bin/vim_wrapper.sh
 [user]
-	email = listout@protonmail.com
-	name = listout
+	email = brahmajit.xyz@gmail.com
+	name = brahmajit das
+	signingkey = brahmajit.xyz@gmail.com
+[sendemail]
+	smtpserver = smtp.googlemail.com
+	smtpencryption = tls
+	smtpserverport = 587
+	smtpuser = brahmajit.xyz@gmail.com
 [alias]
 	# list files which have changed since REVIEW_BASE
 	# (REVIEW_BASE defaults to 'master' in my zshrc)
