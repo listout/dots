@@ -4,6 +4,8 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
+export PROJ_HOME=$HOME/Documents/work/idf_projects/walk
+
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"

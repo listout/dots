@@ -1,7 +1,7 @@
 # Receive options
-set imap_pass="`pass show gmail/main/mutt_pass`"
-set imap_user="`pass show gmail/main/name`"@gmail.com
-set folder=imaps://`pass show gmail/main/name`@imap.gmail.com/
+set imap_pass="`pass show gmail/work/mutt`"
+set imap_user="`pass show gmail/work/name`"@gmail.com
+set folder=imaps://`pass show gmail/work/name`@imap.gmail.com/
 set spoolfile=+INBOX
 set record="+[Gmail]/Sent Mail"
 set postponed="+[Gmail]/Drafts"
@@ -29,11 +29,11 @@ set mail_check=120
 unset record
 
 ## Send options
-set smtp_url=smtps://`pass show gmail/main/name`:`pass show gmail/main/mutt_pass`@smtp.gmail.com
-set from=`pass show gmail/main/name`@gmail.com
+set smtp_url=smtps://`pass show gmail/work/name`:`pass show gmail/work/mutt`@smtp.gmail.com
+set from=`pass show gmail/work/name`@gmail.com
 set hostname="gmail.com"
 
 ## Hook
-account-hook $folder "set imap_user=`pass show gmail/main/name`@gmail.com imap_pass=`pass show gmail/main/mutt_pass`"
+account-hook $folder "set imap_user=`pass show gmail/work/name`@gmail.com imap_pass=`pass show gmail/work/mutt`"
 
 # vim: set ft=muttrc:
