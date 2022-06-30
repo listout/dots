@@ -7,6 +7,10 @@ set record="+[Gmail]/Sent Mail"
 set postponed="+[Gmail]/Drafts"
 mailboxes =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
 
+# Show lable in mailbox
+mailboxes =gsoc # lable name
+mailboxes "imaps://`pass show gmail/work/name`@imap.gmail.com/gsoc"
+
 # store message header locally
 set header_cache=~/.cache/neomutt
 
@@ -32,6 +36,10 @@ unset record
 set smtp_url=smtps://`pass show gmail/work/name`:`pass show gmail/work/mutt`@smtp.gmail.com
 set from=`pass show gmail/work/name`@gmail.com
 set hostname="gmail.com"
+set realname='listout'
+set use_from=yes
+
+set signature="$HOME/.config/neomutt/signature"
 
 ## Hook
 account-hook $folder "set imap_user=`pass show gmail/work/name`@gmail.com imap_pass=`pass show gmail/work/mutt`"

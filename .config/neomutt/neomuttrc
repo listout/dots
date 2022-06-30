@@ -39,6 +39,9 @@ set mail_check_stats
 set sidebar_width = 25                  # Plenty of space
 set sidebar_divider_char = '│'          # Pretty line-drawing character
 
+set alias_file="$HOME/.config/neomutt/aliases"
+source "$HOME/.config/neomutt/aliases"
+
 ## ACCOUNT 1
 source "~/.config/neomutt/gmail_main"
 folder-hook $folder 'source ~/.config/neomutt/gmail_main'
