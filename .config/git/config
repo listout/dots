@@ -15,14 +15,15 @@
 [diff]
 	tool = vimdiff
 [user]
-	email = brahmajit.xyz@gmail.com
-	name = brahmajit das
-	signingkey = brahmajit.xyz@gmail.com
+	email = listout@protonmail.com
+	name = listout
+	signingkey = listout@protonmail.com
 [sendemail]
 	smtpserver = smtp.googlemail.com
 	smtpencryption = tls
 	smtpserverport = 587
 	smtpuser = brahmajit.xyz@gmail.com
+	suppresscc = self
 [alias]
 	# list files which have changed since REVIEW_BASE
 	# (REVIEW_BASE defaults to 'master' in my zshrc)
