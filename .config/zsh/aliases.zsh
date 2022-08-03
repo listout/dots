@@ -10,7 +10,7 @@ alias mkdir='mkdir -vp'
 alias less='/usr/share/nvim/runtime/macros/less.sh'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-if [ -d "$HOME/esp/esp-idf" ]
+if [ -d "$HOME/esp/esp-idf-v4.4.1" ]
 then
 	alias get_idf='. $HOME/esp/esp-idf/export.sh'
 	alias get_idf4='. $HOME/esp/esp-idf-v4.4.1/export.sh'
