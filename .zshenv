@@ -9,7 +9,7 @@ export PROJ_HOME=$HOME/Documents/work/idf_projects/walk
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"
-export PATH=/home/gogo/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
 
