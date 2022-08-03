@@ -19,10 +19,10 @@ XF86MonBrightnessDown
 
 # terminal emulator
 super + Return
-	xterm
+	kitty
 
 super + shift + Return
-	kitty
+	alacritty
 
 # program launcher
 super + @space
