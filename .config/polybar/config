@@ -3,8 +3,86 @@
 ;--------;
 
 [colors]
-foreground = #b5b4c9
-background = #1c1c1c
+nord0 =  #2e3440
+nord1 =  #3b4252
+nord2 =  #434c5e
+nord3 =  #4c566a
+nord4 =  #d8dee9
+nord5 =  #e5e9f0
+nord6 =  #eceff4
+nord7 =  #8fbcbb
+nord8 =  #88c0d0
+nord9 =  #81a1c1
+nord10 = #5e81ac
+nord11 = #bf616a
+nord12 = #d08770
+nord13 = #ebcb8b
+nord14 = #a3be8c
+nord15 = #b48ead
+
+background-dark = ${colors.nord0}
+background = ${colors.nord3}
+background-light = ${colors.nord6}
+foreground = #fff
+primary = #4c566a
+secondary = #f05
+alert = #bd2c40
+accent = #bf616a
+
+red      = ${colors.nord11}
+green    = ${colors.nord14}
+orange   = ${colors.nord12}
+yellow   = ${colors.nord13}
+blue     = ${colors.nord10}
+turkoise = ${colors.nord7}
+purple   = ${colors.nord15}
+
+battery = ${colors.yellow}
+cpu     = ${colors.red}
+ram     = ${colors.green}
+temp    = ${colors.orange}
+wifi    = ${colors.blue}
+date    = ${colors.turkoise}
+time    = ${colors.purple}
+power   = ${colors.nord6}
+
+[bar/mybar_external]
+
+;------------;
+; DIMENSIONS ;
+;------------;
+
+width = 100%
+height = 20
+offset-y = 0
+offset-x = 0
+
+border-size = 0
+
+background = ${colors.background-dark}
+foreground = ${colors.foreground}
+
+;----------;
+; LOCATION ;
+;----------;
+
+bottom = false
+monitor = HDMI-A-0
+override-redirect = false
+
+;-------;
+; FONTS ;
+;-------;
+
+font-0="mono:size=11;1"
+
+;---------;
+; MODULES ;
+;---------;
+
+modules-right=cpu temperature pulseaudio date
+modules-left=battery network memory
+modules-center=bspwm
 
 [bar/mybar]
 
@@ -19,7 +97,7 @@ offset-x = 0
 
 border-size = 0
 
-background = ${colors.background}
+background = ${colors.background-dark}
 foreground = ${colors.foreground}
 
 ;----------;
@@ -27,7 +105,7 @@ foreground = ${colors.foreground}
 ;----------;
 
 bottom = false
-;monitor = eDP-1
+monitor = eDP
 override-redirect = false
 
 ;-------;
@@ -70,15 +148,15 @@ label-charging=%time% %percentage%
 label-full=BAT0: %percentage%
 
 label-full-foreground = ${colors.foreground}
-label-full-background = ${colors.background}
+label-full-background = ${colors.background-dark}
 label-full-padding = 2
 
 label-charging-foreground = ${colors.foreground}
-label-charging-background = ${colors.background}
+label-charging-background = ${colors.background-dark}
 label-charging-padding = 2
 
 label-discharging-foreground = ${colors.foreground}
-label-discharging-background = ${colors.background}
+label-discharging-background = ${colors.background-dark}
 label-discharging-padding = 2
 
 format-discharging=<label-discharging>
@@ -95,7 +173,7 @@ time-alt=%I:%M:%S %A, %d %B %Y
 format=<label>
 label=%date% %time%
 label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-background = ${colors.background-dark}
 label-padding = 2
 
 [module/temperature]
@@ -110,10 +188,10 @@ label=Temp: %temperature-c%
 label-warn=TEMP: %temperature-c%
 
 label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-background = ${colors.background-dark}
 label-padding = 2
 label-warn-foreground = ${colors.foreground}
-label-warn-background = ${colors.background}
+label-warn-background = ${colors.background-dark}
 label-warn-padding = 2
 
 [module/cpu]
@@ -123,7 +201,7 @@ format=<label>
 label=CPU: %percentage%%
 
 label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-background = ${colors.background-dark}
 label-padding = 2
 
 [module/memory]
@@ -133,27 +211,29 @@ format=<label>
 label=Mem: %gb_used%
 
 label-foreground = ${colors.foreground}
-label-background = ${colors.background}
+label-background = ${colors.background-dark}
 label-padding = 2
 
 [module/pulseaudio]
 type=internal/pulseaudio
-sink=alsa_output.pci-0000_00_1b.0.analog-stereo
 format=<label-volume>
 label-volume=Vol: %percentage%%
 label-muted=muted
 click-right=pavucontrol
 
 label-volume-foreground = ${colors.foreground}
-label-volume-background = ${colors.background}
+label-volume-background = ${colors.background-dark}
 label-volume-padding = 2
 
 label-muted-foreground = ${colors.foreground}
-label-muted-background = ${colors.background}
+label-muted-background = ${colors.background-dark}
 label-muted-padding = 2
 
 [module/bspwm]
 type=internal/bspwm
+
+pin-workspaces = true
+
 format=<label-state> <label-mode>
 label-focused=%name%
 label-focused-padding=2
@@ -162,26 +242,26 @@ label-occupied-padding=2
 label-empty=%name%
 label-empty-padding=2
 
-label-focused-foreground = #c6aed7
-label-focused-background = ${colors.background}
-label-occupied-foreground = #8296b0
-label-occupied-background = ${colors.background}
-label-empty-foreground = #5b5f71
-label-empty-background = ${colors.background}
+label-focused-foreground = ${colors.nord4}
+label-focused-background = ${colors.background-dark}
+label-occupied-foreground = ${colors.nord7}
+label-occupied-background = ${colors.background-dark}
+label-empty-foreground = ${colors.nord10}
+label-empty-background = ${colors.background-dark}
 
 [module/network]
 type=internal/network
-interface=wlan0
+interface=wlp2s0
 interval=1.0
 label-connected=%essid% %local_ip%
 label-disconnected=""
 
 label-connected-foreground = ${colors.foreground}
-label-connected-background = ${colors.background}
+label-connected-background = ${colors.background-dark}
 label-connected-padding = 2
 
 label-disconnected-foreground = ${colors.foreground}
-label-disconnected-background = ${colors.background}
+label-disconnected-background = ${colors.background-dark}
 label-disconnected-padding = 2
 
 ; vim: set ft=dosini nomodeline:

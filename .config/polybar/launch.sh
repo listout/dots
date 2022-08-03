@@ -9,5 +9,6 @@ export DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}'
 killall -q polybar
 echo "---" | tee -a /tmp/polybar1.log
 polybar mybar 2>&1 | tee -a /tmp/polybar1.log & disown
+polybar mybar_external 2>&1 | tee -a /tmp/polybar_ext.log & disown
 
 echo "Bar launched"
