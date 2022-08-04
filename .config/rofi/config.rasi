@@ -1,7 +1,7 @@
 configuration {
-	font:                   "Terminus 10";
+	font:                   "Monospace Bold 12";
 	modi:                   "drun,windowcd,window";
-	show-icons:             false;
+	show-icons:             true;
 	display-drun:           "run";
 	drun-display-format:    "{name}";
 	display-windowcd:       "";
@@ -12,9 +12,9 @@ configuration {
 }
 
 * {
-	bg: #1c1c1c;
-	fg: #b5b4c9;
-	accent: #b5b4c9;
+	bg: #2e3440;
+	fg: #eceff4;
+	accent: #eceff4;
 	background-color: @bg;
 }
 
