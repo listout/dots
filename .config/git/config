@@ -9,7 +9,7 @@
 [mergetool]
 	prompt = true
 [mergetool "vimdiff"]
-	cmd = nvim -d $LOCAL $REMOTE
+	cmd = nvim --noplugin -u ~/.config/nvim/init_min.lua -d $LOCAL $REMOTE
 [difftool]
 	prompt = false
 [diff]
