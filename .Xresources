@@ -68,10 +68,10 @@ XTerm.vt100.italicFont: xft:TamzenForPowerline:pixelsize=16
 ! URxvt config
 URxvt.scrollBar: flase
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=16
-URxvt.italicFont: xft:TamzenForPowerline:pixelsize=16
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=16
-URxvt.boldItalicFont: xft:TamzenForPowerline:bold:pixelsize=16
+URxvt.font: xft:TamzenForPowerline:regular:pixelsize=20
+URxvt.italicFont: xft:TamzenForPowerline:regular:pixelsize=20
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=20
+URxvt.boldItalicFont: xft:TamzenForPowerline:bold:pixelsize=20
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
