@@ -1,5 +1,5 @@
 configuration {
-	font:                   "Monospace Bold 12";
+	font:                   "Monospace Bold 11";
 	modi:                   "drun,windowcd,window";
 	show-icons:             true;
 	display-drun:           "run";
@@ -20,11 +20,11 @@ configuration {
 
 window {
 	border: 2px;
-	border-color: #5b5f71;
+	border-color: #4c566a;
 	border-radius: 0px;
 	padding: 0px;
-	width: 20%;
-	height: 15%;
+	width: 20em;
+	height: 20em;
 }
 
 prompt {
