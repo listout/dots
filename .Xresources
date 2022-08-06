@@ -54,9 +54,9 @@ XTerm.vt100.translations: #override \n\
 	Ctrl <Key>R: restore() \n\
 	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
 	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
-XTerm.vt100.faceName: Cartograph\ CF:size=11
-XTerm.vt100.boldFont: Cartograph\ CF\ Bold:size=11
-XTerm.vt100.italicFont: CLIPBOARD\ CF\ Italic:size=11
+XTerm.vt100.faceName: xft:TamzenForPowerline:pixelsize=16
+XTerm.vt100.boldFont: xft:TamzenForPowerline:bold:pixelsize=16
+XTerm.vt100.italicFont: xft:TamzenForPowerline:pixelsize=16
 
 ! URxvt config
 URxvt.scrollBar: flase
