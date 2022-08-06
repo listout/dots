@@ -41,6 +41,13 @@
 
 Xcursor.size: 16
 Xft.dpi: 100
+! These might also be useful depending on your monitor and personal preference:
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
 
 ! XTerm config
 XTerm.visualBell: true
@@ -62,7 +69,9 @@ XTerm.vt100.italicFont: xft:TamzenForPowerline:pixelsize=16
 URxvt.scrollBar: flase
 
 URxvt.font: xft:TamzenForPowerline:pixelsize=16
-URxvt.boldFont: xft:TamzenForPowerline:bold
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=16
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=16
+URxvt.boldItalicFont: xft:TamzenForPowerline:bold:pixelsize=16
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
