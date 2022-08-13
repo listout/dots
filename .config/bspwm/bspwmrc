@@ -17,7 +17,7 @@ sh $HOME/Documents/scroll_trackball.sh &
 $HOME/.config/polybar/launch.sh &
 
 # wallppaer
-hsetroot -solid '#1b1f26' &
+hsetroot -solid '#24283b' &
 #feh --bg-fill $HOME/wallpaper/waves.png
 
 # /usr/bin/kdeconnect-indicator &
