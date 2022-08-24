@@ -17,7 +17,7 @@ sh $HOME/Documents/scroll_trackball.sh &
 $HOME/.config/polybar/launch.sh &
 
 # wallppaer
-hsetroot -solid '#24283b' &
+hsetroot -solid '#1c1c1c' &
 #feh --bg-fill $HOME/wallpaper/waves.png
 
 # /usr/bin/kdeconnect-indicator &
@@ -36,9 +36,9 @@ bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config normal_border_color '#c0caf5'
-bspc config active_border_color '#c0caf5'
-bspc config focused_border_color '#bb9af7'
+bspc config normal_border_color '#5b5f71'
+bspc config active_border_color '#5b5f71'
+bspc config focused_border_color '#8296b0'
 
 # focus on hover
 bspc config focus_follows_pointer true
