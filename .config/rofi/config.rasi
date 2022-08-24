@@ -2,7 +2,7 @@ configuration {
 	font:                   "Monospace Bold 11";
 	modi:                   "drun,windowcd,window";
 	show-icons:             true;
-	display-drun:           "run";
+	display-drun:           "";
 	drun-display-format:    "{name}";
 	display-windowcd:       "";
 	display-window:         "";
@@ -12,15 +12,15 @@ configuration {
 }
 
 * {
-	bg: #2e3440;
-	fg: #eceff4;
-	accent: #eceff4;
+	bg: #1c1c1c;
+	fg: #f0ecfe;
+	accent: #f0ecfe;
 	background-color: @bg;
 }
 
 window {
 	border: 2px;
-	border-color: #4c566a;
+	border-color: #5b5f71;
 	border-radius: 0px;
 	padding: 0px;
 	width: 20em;
