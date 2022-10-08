@@ -13,7 +13,7 @@ print_info() {
     info " ​ ​ ${cl4}██ Kernel" kernel
     info " ​ ​ ${cl7}██ Shell" shell
     info " ​ ​ ${cl3}██ Packages" packages
-    info " ​ ​ ${cl1}██ uptime" uptime
+    info " ​ ​ ${cl1}██ Uptime" uptime
     info cols
 }
 
