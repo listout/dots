@@ -9,16 +9,18 @@ export PROJ_HOME=$HOME/Documents/work/idf_projects/walk
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/bin/mgorny-dev-scripts:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
 
 export EDITOR=/usr/bin/nvim
-export PAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
-export MANPAGER="/bin/sh -c \"col -b | nvim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+export PAGER=less
+export MANPAGER=less
 export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_PLATFORM_PLUGIN=qt5ct
 export QT_PLATFORMTHEME=qt5ct
 export GPG_TTY=$(tty)
+export LIBGL_DRI3_DISABLE=true
