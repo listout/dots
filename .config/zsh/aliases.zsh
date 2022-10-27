@@ -9,6 +9,7 @@ alias rm='rm -ir'
 alias mkdir='mkdir -vp'
 alias less='/usr/share/nvim/runtime/macros/less.sh'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias chkspeed='wget http://speedtest.tele2.net/1GB.zip -O /dev/null'
 
 if [ -d "$HOME/esp/esp-idf" ]
 then
