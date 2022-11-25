@@ -26,3 +26,51 @@ export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
+# leio's scripts
+function pu () {
+	diff --color=auto -u $1 $2
+}
+
+function prep () {
+        ebuild $1 prepare
+        ebuild $2 prepare
+        diff --color=auto -u $1 $2
+}
+
+function p () {
+        if [ $# -gt 1 ]; then
+                prep "$@"
+        else
+                diff --color=auto -u /var/db/pkg/`pwd |rev |cut -d/ -f2 |rev`/"${1%.ebuild}/$1" "$1"
+        fi
+}
+
+function b2() {
+    if [ $# -ne 2 ]; then
+        echo "Wrong amount of parameters"
+        return
+    fi
+
+    cp -v "${1}" "${2}"
+    ekeyword ~all "${2}"
+    ebuild "${2}" manifest
+}
+
+function b () {
+    if [ $# -ne 2 ]; then
+        echo "Wrong amount of parameters"
+        return
+    fi
+
+    b2 "$@"
+    p "${1}" "${2}"
+}
+
+function s () {
+    git log "$@" |git shortlog -e
+}
+
+function ss () {
+    git log "$@" |git shortlog -e |grep -v '[Ss]tabilize' | grep -v '[Ss]table' |grep -v '[Kk]eyword ' |less
+}
