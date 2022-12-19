@@ -15,7 +15,7 @@ export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
 
 export EDITOR=/usr/bin/nvim
-export PAGER=less
+export PAGER=/usr/bin/nvimpager
 export MANPAGER=less
 export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
