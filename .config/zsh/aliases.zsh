@@ -47,14 +47,14 @@ function p () {
 }
 
 function b2() {
-    if [ $# -ne 2 ]; then
-        echo "Wrong amount of parameters"
-        return
-    fi
+	if [ $# -ne 2 ]; then
+		echo "Wrong amount of parameters"
+		return
+	fi
 
-    cp -v "${1}" "${2}"
-    ekeyword ~all "${2}"
-    ebuild "${2}" manifest
+	cp -v "${1}" "${2}";
+	(ekeyword all "${2}")
+	ebuild "${2}" manifest;
 }
 
 function b () {
