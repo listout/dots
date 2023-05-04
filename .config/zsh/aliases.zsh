@@ -17,12 +17,6 @@ then
 	export MENUCONFIG_STYLE=monochrome
 	export IDF_CCACHE_ENABLE=1
 fi
-if [ -d "$HOME/esp/esp-idf-v5.0" ]
-then
-	alias get_idf_5='. $HOME/esp/esp-idf-v5.0/export.sh'
-	export MENUCONFIG_STYLE=monochrome
-	export IDF_CCACHE_ENABLE=1
-fi
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
