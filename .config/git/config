@@ -15,8 +15,8 @@
 [diff]
 	tool = vimdiff
 [user]
-	email = listout@protonmail.com
-	name = listout
+	email = brahmajit.xyz@gmail.com
+	name = Brahmajit Das
 	signingkey = listout@protonmail.com
 [sendemail]
 	smtpserver = smtp.googlemail.com
@@ -34,3 +34,5 @@
 	stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
 	d = diff
 	dt = difftool
+[http]
+	postBuffer = 157286400
