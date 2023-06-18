@@ -16,7 +16,7 @@ export npm_config_prefix="$HOME/.local"
 
 export EDITOR=/usr/bin/nvim
 export PAGER=/usr/bin/nvimpager
-export MANPAGER=less
+export MANPAGER='nvim +Man!'
 export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
