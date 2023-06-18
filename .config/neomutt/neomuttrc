@@ -39,6 +39,27 @@ set mail_check_stats
 set sidebar_width = 25                  # Plenty of space
 set sidebar_divider_char = '│'          # Pretty line-drawing character
 
+set header_cache = "~/.neomutt/cache/headers"
+set message_cachedir = "~/.neomutt/cache/bodies"
+set certificate_file = "~/.neomutt/certificates"
+set tmpdir = "~/.neomutt/tmp"
+
+# Use GPGME
+set crypt_use_gpgme = yes
+# Sign replies to signed emails
+set crypt_replysign = yes
+# Encrypt replies to encrypted emails
+set crypt_replyencrypt = yes
+# Encrypt and sign replies to encrypted and signed email
+set crypt_replysignencrypted = yes
+# Attempt to verify signatures automatically
+set crypt_verify_sig = yes
+# Use my key for signing and encrypting
+set pgp_sign_as = 0xB0EB240706B442A7
+macro   compose \CP     "Fgpg --clearsign\ny"
+macro   compose \CS     "Fgpg --clearsign\ny^T^Uapplication/pgp; format=text; x-action=sign\n"
+
+
 set alias_file="$HOME/.config/neomutt/aliases"
 source "$HOME/.config/neomutt/aliases"
 
