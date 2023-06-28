@@ -36,3 +36,6 @@
 	dt = difftool
 [http]
 	postBuffer = 157286400
+[credential]
+	helper = !pass-git-helper $@
+	useHttpPath = true
