@@ -39,10 +39,10 @@ set mail_check_stats
 set sidebar_width = 25                  # Plenty of space
 set sidebar_divider_char = '│'          # Pretty line-drawing character
 
-set header_cache = "~/.neomutt/cache/headers"
-set message_cachedir = "~/.neomutt/cache/bodies"
-set certificate_file = "~/.neomutt/certificates"
-set tmpdir = "~/.neomutt/tmp"
+set header_cache = "~/.config/neomutt/cache/headers"
+set message_cachedir = "~/.config/neomutt/cache/bodies"
+set certificate_file = "~/.config/neomutt/certificates"
+set tmpdir = "~/.config/neomutt/tmp"
 
 # Use GPGME
 set crypt_use_gpgme = yes
