@@ -114,10 +114,14 @@ tag-formats "replied" "GR" \
             "signed" "GS" \
             "attachment" "GA" \
 
-## ACCOUNT 2
+## ACCOUNT 1
 source "~/.config/neomutt/suse"
 folder-hook $folder 'source ~/.config/neomutt/suse'
 
-## ACCOUNT 1
-#source "~/.config/neomutt/gmail_main"
-#folder-hook $folder 'source ~/.config/neomutt/gmail_main'
+# Macros for switching accounts
+macro index <f6> '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/neomutt/suse'
+macro index <f7> '<sync-mailbox><enter-command>source $XDG_CONFIG_HOME/neomutt/gmail_main'
+
+## ACCOUNT 2
+source "~/.config/neomutt/gmail_main"
+folder-hook $folder 'source ~/.config/neomutt/gmail_main'
