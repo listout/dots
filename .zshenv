@@ -9,7 +9,7 @@ export PROJ_HOME=$HOME/Documents/work/idf_projects/walk
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"
-PATH="$HOME/.local/bin/mgorny-dev-scripts:$PATH"
+PATH="/usr/local/texlive/2023/bin/x86_64-linux:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
