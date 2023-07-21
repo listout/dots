@@ -82,4 +82,5 @@ zstyle ':completion:*' menu select list-colors ${(s.:.)LS_COLORS}
 ### completion and prompt init
 autoload -Uz compinit colors vcs_info
 fpath+=~/.zfunc
+fpath+=(~/.config/zsh/completion $fpath)
 compinit
