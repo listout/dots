@@ -9,11 +9,13 @@
 [mergetool]
 	prompt = true
 [mergetool "vimdiff"]
-	cmd = nvim --noplugin -u ~/.config/nvim/init_min.lua -d $LOCAL $REMOTE
+	cmd = nvim --noplugin -u ~/.config/nvim/init_min.lua -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
 	prompt = false
 [diff]
-	tool = vimdiff
+	tool = nvimdiff
+[difftool "nvimdiff"]
+	cmd = nvim --noplugin -u ~/.config/nvim/init_min.lua -d $LOCAL $REMOTE
 [user]
 	email = brahmajit.xyz@gmail.com
 	name = Brahmajit Das
