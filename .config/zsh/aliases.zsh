@@ -8,7 +8,7 @@ alias mv='mv -iv'
 alias cp='cp -riv'
 alias rm='rm -ir'
 alias mkdir='mkdir -vp'
-#alias less='/usr/share/nvim/runtime/macros/less.sh'
+alias less='less -x4RFsX'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias chkspeed='wget http://speedtest.tele2.net/1GB.zip -O /dev/null'
 
@@ -20,6 +20,15 @@ export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+# nicer highlighting
+if [ -f "/usr/share/source-highlight/src-hilite-lesspipe.sh" ]; then
+	# ubuntu 12.10: sudo apt-get install source-highlight
+	export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+elif [ -f "/usr/bin/src-hilite-lesspipe.sh" ]; then
+	# fedora 18: sudo yum install source-highlight
+	# gentoo: sudo emerge -a source-highlight
+	export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+fi
 
 # leio's scripts
 function pu () {
