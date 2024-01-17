@@ -1,0 +1,75 @@
+[[colors.indexed_colors]]
+color = "#b6927b"
+index = 16
+
+[[colors.indexed_colors]]
+color = "#b98d7b"
+index = 17
+
+[colors.bright]
+black = "#a6a69c"
+blue = "#7FB4CA"
+cyan = "#7AA89F"
+green = "#87a987"
+magenta = "#938AA9"
+red = "#E46876"
+white = "#c5c9c5"
+yellow = "#E6C384"
+
+[colors.normal]
+black = "#0d0c0c"
+blue = "#8ba4b0"
+cyan = "#8ea4a2"
+green = "#8a9a7b"
+magenta = "#a292a3"
+red = "#c4746e"
+white = "#C8C093"
+yellow = "#c4b28a"
+
+[colors.primary]
+background = "#181616"
+foreground = "#c5c9c5"
+
+[colors.selection]
+background = "#2D4F67"
+foreground = "#C8C093"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Cartograph CF"
+style = "Bold"
+
+[font.bold_italic]
+family = "Cartograph CF"
+style = "Bold Italic"
+
+[font.italic]
+family = "Cartograph CF"
+style = "Italic"
+
+[font.normal]
+family = "Cartograph CF"
+style = "Regular"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
+
+[window]
+decorations = "full"
+dynamic_title = true
