@@ -77,3 +77,7 @@ function s () {
 function ss () {
     git log "$@" |git shortlog -e |grep -v '[Ss]tabilize' | grep -v '[Ss]table' |grep -v '[Kk]eyword ' |less
 }
+
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+export MENUCONFIG_STYLE=monochrome
+export IDF_ENABLE_CCACHE=1
