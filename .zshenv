@@ -7,7 +7,6 @@ export XDG_STATE_HOME=$HOME/.local/state
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"
-PATH="/usr/local/texlive/2023/bin/x86_64-linux:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
