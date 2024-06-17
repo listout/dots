@@ -12,6 +12,10 @@ alias less='less -x4RFsX'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias chkspeed='wget http://speedtest.tele2.net/1GB.zip -O /dev/null'
 alias sd="cd ~ && cd \$(fd -t d --hidden | fzf)"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
