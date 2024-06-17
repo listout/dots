@@ -18,4 +18,4 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 ## Do not write duplicate events to history
-# setopt HIST_SAVE_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
