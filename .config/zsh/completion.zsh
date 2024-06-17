@@ -59,17 +59,6 @@ zstyle ':completion:*:cd:*' ignore-parents parent pwd
 ### cd without cd
 setopt auto_cd
 
-### Quick change directories
-rationalise-dot() {
-	if [[ $LBUFFER = *.. ]]; then
-		LBUFFER+=/..
-	else
-		LBUFFER+=.
-	fi
-}
-zle -N rationalise-dot
-bindkey . rationalise-dot
-
 ### Complete from middle of filename
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
 
@@ -81,6 +70,19 @@ zstyle ':completion:*' menu select list-colors ${(s.:.)LS_COLORS}
 
 ### completion and prompt init
 autoload -Uz compinit colors vcs_info
-fpath+=~/.zfunc
+fpath+=(~/.zfunc $fpath)
 fpath+=(~/.config/zsh/completion $fpath)
 compinit
+__pip() {{
+            compadd $( COMP_WORDS="$words[*]" \
+                       COMP_CWORD=$((CURRENT-1)) \
+                       PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null )
+        }}
+if [[ $zsh_eval_context[-1] == loadautofunc ]]; then
+    # autoload from fpath, call function directly
+    __pip "$@"
+else
+    # eval/source/. command, register function for later
+    compdef __pip -P pip
+    compdef __pip -P pip3
+fi
