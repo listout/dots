@@ -28,8 +28,6 @@ bind index \031 previous-undeleted	# Mouse wheel
 bind index \005 next-undeleted		# Mouse wheel
 bind pager \031 previous-line		# Mouse wheel
 bind pager \005 next-line		# Mouse wheel
-bind editor <Tab> complete-query
-bind index,pager B sidebar-toggle-visible
 
 # sidebar mappings
 bind index,pager \Ck sidebar-prev
