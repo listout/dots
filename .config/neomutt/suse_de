@@ -35,7 +35,7 @@ set mail_check=2
 ## Send options
 set smtp_url="smtp://`pass show suse/imap_username`@`pass show suse/imap_address`:587/"
 set smtp_pass="`pass show suse/imap_password`"
-set from="brahmajit"
+set from="bdas"
 set hostname="suse.de"
 set realname='Brahmajit'
 set use_from=yes
