@@ -9,7 +9,7 @@ alias cp='cp -riv'
 alias rm='rm -ir'
 alias mkdir='mkdir -vp'
 alias less='less -x4RFsX'
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir ~/.dotfiles/ --work-tree ~'
 alias chkspeed='wget http://speedtest.tele2.net/1GB.zip -O /dev/null'
 alias sd="cd ~ && cd \$(fd -t d --hidden | fzf)"
 alias ..="cd .."
