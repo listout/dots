@@ -41,20 +41,20 @@ TERM = "xterm-256color"
 size = 12.0
 
 [font.bold]
-family = "Cartograph CF"
+family = "Source Code Pro"
 style = "Bold"
 
 [font.bold_italic]
-family = "Cartograph CF"
+family = "Source Code Pro"
 style = "Bold Italic"
 
 [font.italic]
-family = "Cartograph CF"
-style = "Italic"
+family = "Source Code Pro"
+style = "Semibold Italic"
 
 [font.normal]
-family = "Cartograph CF"
-style = "Regular"
+family = "Source Code Pro"
+style = "Semibold"
 
 [[hints.enabled]]
 command = "xdg-open"
