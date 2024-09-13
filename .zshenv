@@ -7,14 +7,15 @@ export XDG_STATE_HOME=$HOME/.local/state
 # fnm
 #export PATH=/home/gogo/.fnm:$PATH
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/nvim/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 export npm_config_prefix="$HOME/.local"
 #eval "`fnm env`"
 
-export EDITOR=/usr/bin/nvim
+export EDITOR=$HOME/.local/nvim/bin/nvim
 export PAGER="less"
-export MANPAGER='nvim +Man!'
-export VISUAL=/usr/bin/nvim
+export MANPAGER='$HOME/.local/nvim/bin/nvim +Man!'
+export VISUAL=$HOME/.local/nvim/bin/nvim
 export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_PLATFORM_PLUGIN=qt5ct
