@@ -1,3 +1,6 @@
 [submodule ".config/zsh/pure"]
 	path = .config/zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/listout/nvim.git
