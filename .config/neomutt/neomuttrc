@@ -1,5 +1,5 @@
 # vim: set ft=muttrc:
-set editor="/usr/bin/nvim"
+set editor="nvim"
 
 set sendmail="/usr/bin/msmtp"
 
@@ -66,6 +66,15 @@ macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract 
 set alias_file="$HOME/.config/neomutt/aliases"
 source "$HOME/.config/neomutt/aliases"
 
+folder-hook $folder 'source ~/.config/neomutt/suse_de'
+folder-hook $folder 'source ~/.config/neomutt/gmail_main'
+
 ## ACCOUNT 1
 source "~/.config/neomutt/suse_de"
-# folder-hook $folder 'source ~/.config/neomutt/suse_de'
+
+## ACCOUNT 2
+# source "~/.config/neomutt/gmail_main"
+
+## Shortcuts
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/suse_de<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/gmail_main<enter><change-folder>!<enter>'

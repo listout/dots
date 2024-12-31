@@ -1,3 +1,5 @@
+unmailboxes *
+
 # Unset to properly repopulate the variables
 unset smtp_pass
 unset smtp_url

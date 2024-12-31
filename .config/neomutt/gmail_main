@@ -1,3 +1,5 @@
+unmailboxes *
+
 # Unset to properly repopulate the variables
 unset smtp_pass
 unset smtp_url
@@ -43,9 +45,9 @@ unset record
 
 ## Send options
 set smtp_url=smtps://`pass show gmail/work/name`:`pass show gmail/work/mutt`@smtp.gmail.com
-set from=`pass show gmail/work/name`
+set from=`pass show gmail/work/name`@gmail.com
 set hostname="gmail.com"
-set realname='listout'
+set realname='Brahmajit'
 set use_from=yes
 
 set signature="$HOME/.config/neomutt/signature"
