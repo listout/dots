@@ -5,6 +5,7 @@ exec mako
 exec dbus-update-activation-environment --all
 exec gnome-keyring-daemon --start --components=secrets
 exec export $(gnome-keyring-daemon)
+exec gentoo-pipewire-launcher restart &
 
 set $mod Mod4
 
@@ -16,7 +17,7 @@ set $right l
 set $term alacritty
 set $menu dmenu_path | wmenu | xargs swaymsg exec --
 
-# font pango:Mono 10
+font pango:SourceCodePro Regular 10
 
 output * bg #000000 solid_color
 
@@ -31,10 +32,12 @@ bindsym $mod+f1 exec swaymsg Output eDP-1 toggle
 bindsym $mod+w exec firefox-bin
 bindsym $mod+f exec thunar
 
-bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioMicMute exec pactl set-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 
 bindsym $mod+Return exec $term
 
@@ -66,8 +69,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-workspace 1 output DP-7
-workspace 2 output DP-5
+workspace 1 output eDP-1
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -104,10 +106,14 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
-bindsym control+shift+escape exec $term -T 'flying-foot' -e bashtop
-for_window [title="flying-foot"] floating enable
+bindsym control+shift+escape exec $term -T 'flying-bashtop' -e bashtop
+bindsym control+shift+n exec $term -T 'flying-nm' -e nmtui
+for_window [title="flying-*"] floating enable
 
 bindsym Print exec ~/.local/bin/slurpshot
+
+titlebar_padding 1
+titlebar_border_thickness 0
 
 mode "resize" {
 	bindsym $left resize shrink width 10px
@@ -136,6 +142,7 @@ for_window [class = "(?i)pinentry"] floating enable
 for_window [title = "Administrator privileges required"] floating enable
 for_window [title = "Volume Control"] floating enable
 for_window [title = "Thunar"] floating enable
+for_window [title = "nwg-look"] floating enable
 for_window [title = "Calculator"] floating enable
 for_window [title = "About Mozilla Firefox"] floating enable
 for_window [window_role = "About"] floating enable
