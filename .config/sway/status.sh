@@ -7,6 +7,7 @@
 # time and date.
 date_formatted=$(date "+%a %F %I:%M")
 date_prague=$(TZ=Europe/Prague date "+%a %F %I:%M")
+date_london=$(TZ=Europe/London date "+%a %F %I:%M")
 
 # "upower --enumerate | grep 'BAT'" gets the battery name (e.g.,
 # "/org/freedesktop/UPower/devices/battery_BAT0") from all power devices.
@@ -29,7 +30,7 @@ interface_easyname=$(dmesg | grep $network | grep renamed | awk 'NF>1{print $NF}
 ping=$(ping -c 1 www.google.es | tail -1| awk '{print $4}' | cut -d '/' -f 2 | cut -d '.' -f 1)
 
 # CPU temp
-cpu_temp=$(sensors | grep -oP 'Package.*?\+\K[0-9.]+')
+cpu_temp=$(sensors | grep -oP 'CPU.*?\+\K[0-9.]+')
 
 # Additional emojis and characters for the status bar:
-echo $network $ip_addr \| $cpu_temp \| $battery_info \| PRG: $date_prague \| $date_formatted
+echo $network $ip_addr \| CPU: $cpu_temp \| $battery_info \| LON: $date_london \| PRG: $date_prague \| $date_formatted
