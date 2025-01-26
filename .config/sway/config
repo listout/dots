@@ -29,6 +29,8 @@ input "1133:16534:Logitech_ERGO_M575" {
 bindsym $mod+z exec swaylock --ignore-empty-password --show-failed-attempts --color 1e1e1e
 bindsym $mod+f1 exec swaymsg Output eDP-1 toggle
 
+seat seat0 xcursor_theme Adwaita 24
+
 bindsym $mod+w exec firefox-bin
 bindsym $mod+f exec thunar
 
@@ -93,7 +95,7 @@ bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
-bindsym $mod+b splith
+bindsym $mod+s splith
 bindsym $mod+v splitv
 
 
@@ -109,6 +111,7 @@ bindsym $mod+minus scratchpad show
 bindsym control+shift+escape exec $term -T 'flying-bashtop' -e bashtop
 bindsym control+shift+n exec $term -T 'flying-nm' -e nmtui
 for_window [title="flying-*"] floating enable
+for_window [app_id="io.github.celluloid_player.Celluloid"] border none
 
 bindsym Print exec ~/.local/bin/slurpshot
 
@@ -144,6 +147,7 @@ for_window [title = "Volume Control"] floating enable
 for_window [title = "Thunar"] floating enable
 for_window [title = "nwg-look"] floating enable
 for_window [title = "Calculator"] floating enable
+for_window [title = "Disks"] floating enable
 for_window [title = "About Mozilla Firefox"] floating enable
 for_window [window_role = "About"] floating enable
 for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
