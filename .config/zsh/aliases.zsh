@@ -86,6 +86,8 @@ function ss () {
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
 export MENUCONFIG_STYLE=monochrome
 export IDF_ENABLE_CCACHE=1
+export LINUX_GIT="$HOME/linux"
+export VULNS_GIT="$HOME/vulns"
 
 function fman() {
 	man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
