@@ -162,6 +162,7 @@ for_window [title = "Thunar"] floating enable
 for_window [title = "nwg-look"] floating enable
 for_window [title = "Calculator"] floating enable
 for_window [title = "Disks"] floating enable
+for_window [title = "System Monitor"] floating enable
 for_window [title = "About Mozilla Firefox"] floating enable
 for_window [window_role = "About"] floating enable
 for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
