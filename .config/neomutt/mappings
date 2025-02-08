@@ -52,6 +52,9 @@ macro index,pager A \
 		  "<pipe-message>khard add-email<return>" \
 		  "add the sender email address to khard"
 
+# mark an entire mail box as read
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "Mark all messages as read"
+
 # use markdown in email, esc then 5
 macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
 set wait_key=no
