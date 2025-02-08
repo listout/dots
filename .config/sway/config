@@ -4,6 +4,8 @@ exec mako
 
 exec_always nm-applet --indicator
 
+exec "/usr/libexec/polkit-gnome-authentication-agent-1"
+
 exec dbus-update-activation-environment --all
 exec gnome-keyring-daemon --start --components=secrets
 exec export $(gnome-keyring-daemon)
@@ -124,6 +126,7 @@ bindsym $mod+minus scratchpad show
 
 bindsym control+shift+escape exec $term -T 'flying-bashtop' -e bashtop
 bindsym control+shift+n exec $term -T 'flying-nm' -e nmtui
+bindsym control+shift+s exec $term -T 'flying-sp'
 for_window [title="flying-*"] floating enable
 for_window [app_id="io.github.celluloid_player.Celluloid"] border none
 
