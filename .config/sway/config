@@ -42,6 +42,16 @@ input "type:touchpad" {
 	tap_button_map lrm
 }
 
+# GTK
+set $gnome_schema org.gnome.desktop.interface
+
+exec_always {
+  gsettings set $gnome_schema gtk-theme 'Adwaita-Dark'
+  gsettings set $gnome_schema icon-theme 'Numix-Circle'
+  gsettings set $gnome_schema font-name 'Cantarell 11'
+  gsettings set $gnome_schema color-scheme 'prefer-dark'
+}
+
 bindsym $mod+z exec swaylock --ignore-empty-password --show-failed-attempts --color 1e1e1e
 bindsym $mod+f1 exec swaymsg Output eDP-1 toggle
 
