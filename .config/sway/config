@@ -19,7 +19,7 @@ set $up k
 set $right l
 
 set $term alacritty
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu fuzzel
 
 font pango:SourceCodePro Regular 10
 
