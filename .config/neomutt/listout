@@ -1,0 +1,46 @@
+unmailboxes *
+
+# Unset to properly repopulate the variables
+unset smtp_pass
+unset smtp_url
+unset smtp_user
+unset from
+unset hostname
+
+# Receive options
+set imap_pass="`pass show mailbox.org/pass`"
+set imap_user="listout@mailbox.org"
+set folder=imaps://imap.mailbox.org:993
+set spoolfile=+INBOX
+set record=+Sent
+set postponed=+Drafts
+mailboxes =INBOX
+set imap_check_subscribed
+
+set edit_headers=yes
+set ssl_force_tls=yes
+set ssl_starttls
+
+set header_cache = "$XDG_CACHE_HOME/neomutt/headers/"
+set message_cachedir = "$XDG_CACHE_HOME/neomutt/bodies/"
+set certificate_file = "$XDG_CACHE_HOME/neomutt/certificates/"
+
+# allow mutt to open a new IMAP connection autmatically
+unset imap_passive
+
+# keep imap connection alive by polling intermittently
+set imap_keepalive=300
+
+# how often to check check for new email
+set mail_check=2
+
+## Send options
+set smtp_url=smtp://listout@mailbox.org@smtp.mailbox.org:587/
+set smtp_pass="`pass show mailbox.org/pass`"
+set from="listout@listout.xyz"
+set use_from=yes
+
+## Hook
+account-hook $folder "set imap_user=listout@listout.xyz imap_pass=`pass show mailbox.org/pass`"
+
+# vim: set ft=muttrc:

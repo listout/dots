@@ -70,11 +70,12 @@ folder-hook $folder 'source ~/.config/neomutt/suse_de'
 folder-hook $folder 'source ~/.config/neomutt/gmail_main'
 
 ## ACCOUNT 1
-source "~/.config/neomutt/suse_de"
+source "~/.config/neomutt/listout"
 
 ## ACCOUNT 2
 # source "~/.config/neomutt/gmail_main"
 
 ## Shortcuts
-macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/suse_de<enter><change-folder>!<enter>'
-macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/gmail_main<enter><change-folder>!<enter>'
+macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/listout<enter><change-folder>!<enter>'
+macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/suse_de<enter><change-folder>!<enter>'
+macro index,pager <f4> '<sync-mailbox><enter-command>source ~/.config/neomutt/gmail_main<enter><change-folder>!<enter>'
