@@ -55,6 +55,9 @@ exec_always {
 bindsym $mod+z exec swaylock --ignore-empty-password --show-failed-attempts --color 1e1e1e
 bindsym $mod+f1 exec swaymsg Output eDP-1 toggle
 
+# Disable touchpad
+bindsym $mod+f7 exec swaymsg input type:touchpad events toggle enabled disabled
+
 seat seat0 xcursor_theme Adwaita 24
 
 bindsym $mod+w exec firefox-bin | firefox
