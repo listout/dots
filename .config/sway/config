@@ -57,7 +57,7 @@ bindsym $mod+f1 exec swaymsg Output eDP-1 toggle
 
 seat seat0 xcursor_theme Adwaita 24
 
-bindsym $mod+w exec firefox-bin
+bindsym $mod+w exec firefox-bin | firefox
 bindsym $mod+f exec thunar
 
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_SINK@ 5%+
