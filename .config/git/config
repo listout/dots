@@ -19,7 +19,7 @@
 [user]
 	email = brahmajit.xyz@gmail.com
 	name = Brahmajit Das
-	signingkey = listout@protonmail.com
+	signingkey = listout@listout.xyz
 [sendemail]
 	smtpserver = smtp.googlemail.com
 	smtpencryption = tls
