@@ -31,6 +31,11 @@ set send_charset = "utf-8:iso-8859-1:us-ascii"
 set charset = "utf-8"
 set arrow_cursor = "no" # Change `color indicator` depending
 
+# general settings
+set fcc_attach # save attachments with the body
+set forward_format = "Fwd: %s" # format of subject when forwarding
+set tilde # use ~ to pad mutt
+
 # mailcap
 set mailcap_path=~/.config/neomutt/mailcap
 

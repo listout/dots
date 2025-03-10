@@ -29,7 +29,7 @@ set certificate_file = "$XDG_CACHE_HOME/neomutt/certificates/"
 unset imap_passive
 
 # keep imap connection alive by polling intermittently
-set imap_keepalive=300
+set imap_keep_alive=300
 
 # how often to check check for new email
 set mail_check=2
