@@ -45,7 +45,8 @@ set mail_check=120
 unset record
 
 ## Send options
-set smtp_url=smtps://`pass show gmail/work/name`:`pass show gmail/work/mutt`@smtp.gmail.com
+set smtp_url=smtps://`pass show gmail/work/name`@smtp.gmail.com
+set smtp_pass="`pass show gmail/work/mutt`"
 set from=`pass show gmail/work/name`@gmail.com
 set hostname="gmail.com"
 set realname='Brahmajit'
