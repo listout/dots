@@ -15,6 +15,7 @@ set spoolfile=+INBOX
 set record="+[Gmail]/Sent Mail"
 set postponed="+[Gmail]/Drafts"
 mailboxes =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
+set imap_check_subscribed
 
 set edit_headers=yes
 set ssl_force_tls=yes
